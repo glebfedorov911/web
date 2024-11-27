@@ -1,0 +1,122 @@
+@import '../../app/css/variables.css';
+
+h1 {
+    text-align: end;
+}
+
+h1, h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+ul {
+    list-style-image: url('/static/pages/img/ul-arrow.svg');
+}
+
+<!-- li > a {
+
+    text-decoration-color: red;
+    color: red;
+}
+-->
+
+a {
+  text-decoration-color: red;
+}
+
+article.main-f-block {
+    gap: 40px;
+    align-items: center;
+}
+
+article.main-f-block > div.img {
+    gap: 30px;
+}
+
+article > figure {
+    max-width: 200px;
+    max-height: 411px;
+
+    width: 100%;
+    height: 100%;
+}
+path.red {
+    stroke: var(--dark-red);
+}
+
+.red {
+    color: var(--dark-red);
+} 
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-text {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+@media screen and (max-width: 768px) { 
+    article.main-f-block {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+}
+
+article.splines-block {
+    grid-template-columns: 1fr 1fr 300px;
+    gap: 5px;
+}
+
+article.splines-block > figure {
+    grid-column: 3/4;
+    grid-row: 1/10;
+}
+
+article.splines-block > #first-point {
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+
+article.splines-block > .second-point {
+    grid-column: 2/2;
+    grid-row: 3/4;
+}
+
+article.splines-block > .third-point {
+    grid-column: 1/1;
+    grid-row: 5/6;
+    margin-left: 50px;
+}
+
+article.splines-block > .fourth-point {
+    grid-column: 2/2;
+    grid-row: 7/8;
+}
+
+article.splines-block > .fifth-point {
+    grid-column: 1/1;
+    grid-row: 10/11;
+
+    padding-left: 200px;
+}
+
+figure.spline {
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+}

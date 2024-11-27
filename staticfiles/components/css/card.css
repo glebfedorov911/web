@@ -1,0 +1,11 @@
+@import '../../app/css/variables.css';
+
+article.card {
+    border: 1px solid var(--red);
+    border-radius: 25px;
+    
+    padding: 19px 17px;
+
+    font-size: 20px;
+    white-space: pre-wrap;
+}
