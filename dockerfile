@@ -17,7 +17,7 @@ ENV PYTHONUNBUFFERED=1 \
 EXPOSE 8000
 
 CMD ["sh", "-c", \
-    "./venv/bin/python manage.py collectstatic && \
+    "./venv/bin/python manage.py collectstatic --noinput && \
     ./venv/bin/python manage.py makemigrations && \
     ./venv/bin/python manage.py migrate && \
     ./venv/bin/uvicorn web.asgi:application --host 0.0.0.0 --port 8000"]
