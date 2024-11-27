@@ -1,0 +1,31 @@
+section.transparency__content {
+    width: 100%;
+    justify-content: sapce-between;
+    aling-items: center;
+    gap: 40px;
+}
+
+
+section.transparency__content > article.card, 
+section.transparency__content > article.card > ul > li {
+    font-size: 22px;
+}
+
+section.flex-img-list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+section.flex-img-list > figure {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.flex-img-list > figure > img {
+    object-fit: cover;    
+}

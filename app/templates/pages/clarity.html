@@ -1,0 +1,280 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex clarity__content">
+        {% with card|safe as content %}
+            {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static 'pages/img/clarity.png' %}" alt=""></figure>
+    </section>
+
+
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1vvs1.png' %}" alt="Type1vvs1" />
+    </div>
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - VVS1:</strong>
+            The smallest inclusions in the form of insignificant points, which range from
+            <em>extremely hard to see</em> to <em>very hard to see</em>. These points
+            are very difficult to find.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1vvs2.png' %}" alt="Type1vvs2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - VVS2:</strong>
+                The smallest inclusions in the form of insignificant points, which range from
+                <em>extremely hard to see</em> to <em>very hard to see</em>. These points are
+                very difficult to find from the site side, but can be found from the
+                pavilion side.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1vs1.png' %}" alt="Type1vs1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - VS1:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1vs2.png' %}" alt="Type1vs2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - VS2:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification. Clouds and small cracks can be detected.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1si1.png' %}" alt="Type1si1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - SI1:</strong>
+                Inclusions are visible at 10x magnification, but are not always visible to
+                the naked eye.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1si2.png' %}" alt="Type1si2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - SI2:</strong>
+                Inclusions are clearly visible at 10x magnification, but are not always
+                visible to the naked eye.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1i1.png' %}" alt="Type1i1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - I1:</strong>
+                Inclusions that are easy to see with the naked eye. Single large inclusions.
+                Inclusions affect the appearance and durability of the gem.
+
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1i2.png' %}" alt="Type1i2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - I2:</strong>
+                Inclusions that are easy to see with the naked eye. Half or one third filled
+                with inclusions. Inclusions affect the appearance and durability of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type1i3.png' %}" alt="Type1i3" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 1 - I3:</strong>
+                Inclusions that are easy to see with the naked eye. The stone is all filled
+                with inclusions. Inclusions affect the appearance and durability of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2vvs1.png' %}" alt="Type2vvs1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - VVS1:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification. No inclusions are visible from the site side.
+         </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2vvs2.png' %}" alt="Type2vvs2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 2 - VVS2:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2vs1.png' %}" alt="Type2vs1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 2 - VS1:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification. You can find clouds and small cracks on the
+                periphery of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2vs2.png' %}" alt="Type2vs2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+            <strong>Type 2 - VS2:</strong>
+                These are usually pure eye stones. They have minor inclusions visible to the
+                naked eye or under magnification. It is not difficult to find inclusions
+                under magnification. You can find clouds and small cracks in any place in the
+                gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2si1.png' %}" alt="Type2si1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - SI1:</strong>
+                Inclusions are visible at 10x magnification. These inclusions are almost
+                always noticeable and visible to the naked eye.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2si2.png' %}" alt="Type2si2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - SI2:</strong>
+                Inclusions are visible at 10x magnification. These inclusions are <strong>ALWAYS</strong>
+                noticeable and visible to the naked eye.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2i1.png' %}" alt="Type2i1" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - I1:</strong>
+                Inclusions that are clearly visible to the naked eye. Single large inclusions.
+                Inclusions affect the appearance and durability of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2i2.png' %}" alt="Type2i2" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - I2:</strong>
+                Inclusions that are clearly visible to the naked eye. Half or one third filled
+                with inclusions. Inclusions affect the appearance and durability of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+    <div class="image-container">
+        <img src="{% static '/pages/img/clarity/Type2i3.png' %}" alt="Type2i3" />
+    </div>
+
+    <div class="text-container">
+        <p>
+           <strong>Type 2 - I3:</strong>
+                Inclusions that are clearly visible to the naked eye. The stone is all filled
+                with inclusions. Inclusions affect the appearance and durability of the gem.
+        </p>
+    </div>
+    <br>
+    <hr style="border-color: red;">
+    <br>
+
+
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/clarity.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}

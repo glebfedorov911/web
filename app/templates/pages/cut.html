@@ -1,0 +1,45 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex cut__content ites-center">
+        {% with main_card|safe as content %}
+            {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static '/pages/img/cut.png' %}" alt=""></figure>
+    </section>
+    <section class="flex imgs-block">
+        <figure class="first-diamond flex flex-col">
+            <img src="{% static '/pages/img/cut-diamond-1.png' %}" alt="">
+            <figcaption class="flex flex-col">
+                <b>Perfect cut</b>
+                <p>With this cut, the light entering the stone, reflecting from the pavilion, comes out through the crown. As a result, we get a glowing “live” stone.</p>
+            </figcaption>
+        </figure>
+        <div class="flex flex-col diamond-container">
+            <div class="flex flex-col">
+                <b>Examples</b>
+                <p>movement of light inside a perfectly cut stone, a stone with insufficient and excessive height</p>
+            </div>
+            <div class="flex justify-between align-items">
+                <figure class="small-diamond">
+                    <img src="{% static '/pages/img/cut-diamond-small-1.png' %}" alt="">
+                </figure>
+                <figure class="small-diamond">
+                    <img src="{% static '/pages/img/cut-diamond-small-2.png' %}" alt="">
+                </figure>
+                <figure class="small-diamond">
+                    <img src="{% static '/pages/img/cut-diamond-small-3.png' %}" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col card-list">
+        {% for card in cards %}
+        {% include "../components/card.html" with card_content=card %}
+        {% endfor %}
+    </section>
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/cut.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}
+

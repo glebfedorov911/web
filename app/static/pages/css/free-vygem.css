@@ -1,0 +1,7 @@
+section.free-vygem__content {
+    gap: 70px 0;
+}
+
+section.free-vygem__content > article.card ul > li {
+    font-size: 18px;
+}

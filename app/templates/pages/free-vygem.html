@@ -1,0 +1,11 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex flex-col free-vygem__content">
+        {% include "../components/card.html" with card_content="The aim of our project is to make the pricing of gemstones understandable to all people who interact with them.<br>As we strive towards our goal, we have undoubtedly made mistakes and inaccuracies in creating the application. Understanding that only those who do nothing do not make mistakes, we will sincerely appreciate it if users of our application point out our voluntary or involuntary errors.<br>Our team is grateful to those who support our project." %}
+        {% include "../components/card.html" with card_content="<ul><li>VYGem developers' focus on inaccuracies in content. 1 to 3 months of free subscription.</li><li>Proposals (accepted by developers) for correcting or supplementing the content of the application or website. A permanent subscription discount of up to 50% and price fixing, regardless of potential increases.</li><li>Proposal for adding new content to the application or website, bringing significant changes (accepted by developers). A permanent subscription discount ranging from 50% to 100% and price fixing, regardless of possible price increases.</li><li>Attracting new users. You receive a 10% discount on subscription for each user you attract (discounts are cumulative. Discounts apply only at the time of subscription payment by new users.  For example: You refer 1 user. The user gets a 10% discount and you get a 10% discount. You refer 3 users. Users get a 10% discount each, and you get a 30% discount. If your discount percentage exceeds 100%, you will receive 10% of the subscription cost from EACH user you refer to our application.</li></ul>" %}
+        <link rel="stylesheet" type="text/css" href="{% static '/pages/css/free-vygem.css' %}" />
+    </section>
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}

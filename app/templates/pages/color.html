@@ -1,0 +1,94 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex color__content">
+        {% with card|safe as content %}
+            {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static 'pages/img/color1.png' %}" alt=""></figure>
+    </section>
+    <div style='text-align:center;'>
+                 <img src="{% static '/pages/img/color3.png' %}" alt="Type1i1" />
+    </div>
+
+    <div style='text-align:center;'>
+                 <img src="{% static '/pages/img/allcolor.png' %}" alt="Type1i1" />
+    </div>
+
+    <p style class=" color = #ff000"> <b><i>Color Trade Name:</i></b></p>
+    <br>
+    <p><b>Pigeon Blood:</b><br> Applicable to Natural Ruby with a combination of hue between 345o and 15o with a saturation
+    between 80 to 100%; and brightness from 100 to 80% with one of the following color grades: Intense red;
+    vivid red or deep red; an even color distribution, a medium to strong fluorescence, a flawless to transparent
+    clarity without pronounced visible inclusions below the table, a good return of light without major windowing
+    or extinction area, and a natural or heated color origin.</p>
+    <br>
+    <p><b>Padparadscha:</b><br> Applicable to Natural Sapphire with a combination of hue between 0  to 40  with a saturation
+    between 20 to 60% and brightness of 100% with one of the following color grades: Light orangy pink; pastel
+    orangy pink; or orangy pink, an even color distribution, a flawless to transparent clarity without pronounced
+    visible inclusions below the table, a good return of light without major windowing or extinction area, and a
+    natural or heated color origin.</p>
+    <br>
+    <p><b>Royal Blue:</b><br> Applicable to Natural Sapphire with a combination of hue between 220o
+    to 265o with a saturation between 80 to 100% and brightness from 100 to 60% with one of the following color grades:
+    Intense blue;vivid blue or deep blue, an even color distribution, a flawless to transparent clarity without pronounced
+    visible inclusions below the table, a good return of light without major windowing or extinction area, and a
+    natural or heated color origin.
+    </p>
+    <br>
+    <p><b>Cornflower:</b><br> Applicable to Natural Sapphire with a combination of hue between 195o
+    to 240o with asaturation between 80 to 100% and brightness from 100 to 80% with one of the following color grades:
+    Intense blue; or vivid blue, an even color distribution, a transparent clarity with a small amount of turbidity
+    for a “velvety appearance” without pronounced visible inclusions below the table, a good return of light
+    without major windowing or extinction area, and a natural or heated color origin.
+    </p>
+    <br>
+    <p><b>Lavender:</b><br> Applicable to Natural Sapphire with a combination of hue between 260
+    o to 285o with a saturationbetween 60 to 100% and brightness from 100 to 60% with one of the following color grades:
+    Intense violet; vivid violet or deep violet, an even color distribution, a flawless to transparent clarity without
+    pronounced visible inclusions below the table, a good return of light without major windowing or extinction area, and a
+    natural or heated color origin.
+    </p>
+    <br>
+    <p><b>Teal:</b><br> Applicable to Natural Sapphire with a combination of hue between 160
+    o to 190o with a saturationbetween 60 to 100% and brightness from 100 to 60% with one of the following color grades:
+    Bluish green; intense bluish green; vivid bluish green; deep bluish green; greenish blue; intense greenish blue; vivid
+    greenish blue; or deep greenish blue, a flawless to transparent clarity without pronounced visible inclusions
+    below the table, a good return of light without major windowing or extinction area, and a natural or heated
+    color origin
+    </p>
+    <br>
+    <p><b>White:</b><br> Applicable to Natural Sapphire with a colorless color grade, a flawless to transparent clarity without
+    pronounced visible inclusions below the table, a good return of light without major windowing or extinction
+    area, and a natural or heated color origin
+    </p>
+    <br>
+    <p><b>Paraiba:</b><br> Applicable to Natural Cuprian Tourmaline with a combination of hue between 160o
+    to 215o with a
+    saturation between 20 to 100% and brightness from 100 to 60% with one of the following color grades:
+    Pastel bluish green; bluish green; intense bluish green; vivid bluish green; deep bluish green; pastel
+    greenish blue; greenish blue; intense greenish blue; vivid greenish blue; deep greenish blue; pastel blue;
+    neon blue; intense neon blue; vivid neon blue; blue; intense blue or deep blue, an even color distribution, a
+    flawless to transparent clarity and a natural or heated color origin.
+    </p>
+    <br>
+    <p><b>Santa Maria:</b><br> Applicable to Natural Aquamarine with a combination of hue between 190o
+    to 205o with a
+    saturation of 20 to 100% and a brightness of 100 to 60% with one of the following color grades: Pastel
+    greenish blue; greenish blue; intense greenish blue; vivid greenish blue; deep greenish blue; pastel blue;
+    neon blue; intense neon blue; vivid neon blue; blue; intense blue or deep blue, an even color distribution, a
+    flawless to transparent clarity and a natural color origin.
+    </p>
+    <br>
+    <p><b>Muzo Green:</b><br> Applicable to Natural Emerald with very low to no presence of ion Fe2+ and a combination of
+    hue between 110oto 160o with a saturation of 80 to 100% and a brightness of 100 to 60% with one of the
+    following color grades: Intense green; vivid green or deep green, an even color distribution, a flawless to
+    transparent clarity, a natural color origin and none to a minor amount of clarity modification.
+    </p>
+    <br>
+
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/color.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+
+{% endblock %}

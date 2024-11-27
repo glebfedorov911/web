@@ -1,0 +1,40 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex imgs-block">
+        <figure class="first-diamond flex flex-col">
+
+            <figcaption class="flex flex-col">
+                <b>Android</b>
+
+            </figcaption>
+        </figure>
+
+    </section>
+
+    {% with main_card|safe as content %}
+        {% include "../components/card.html" with card_content=content %}
+    {% endwith %}
+
+    <section class="flex imgs-block">
+        <figure class="first-diamond flex flex-col">
+
+            <figcaption class="flex flex-col">
+                <b>IOs</b>
+                <p>Installation file download for IOs is temporarily unavailable</p>
+
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <section class="flex flex-col card-list">
+        {% for card in cards %}
+        {% include "../components/card.html" with card_content=card %}
+        {% endfor %}
+    </section>
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/download.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}
+

@@ -1,0 +1,19 @@
+section.carat__content {
+    width: 100%;
+    justify-content: sapce-between;
+    aling-items: center;
+    gap: 40px;
+}
+
+section.carat__content > figure {
+    width: 191.42px;
+    height: 411px;
+
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) { 
+    section.carat__content {
+        flex-wrap: wrap;
+    }
+}

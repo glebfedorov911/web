@@ -1,0 +1,32 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex shape__content">
+        {% with card|safe as content %}
+            {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static '/pages/img/shape.png' %}" alt=""></figure>
+    </section>
+
+     <section class="flex flex-img-list">
+         <figure><img src="{% static '/pages/img/shape/oval.png' %}" alt="oval"></figure>
+         <figure><img src="{% static '/pages/img/shape/round.png' %}" alt="round"></figure>
+         <figure><img src="{% static '/pages/img/shape/pear.png' %}" alt="pear"></figure>
+         <figure><img src="{% static '/pages/img/shape/emerald.png' %}" alt="emerald"></figure>
+         <figure><img src="{% static '/pages/img/shape/trillion.png' %}" alt="trillion"></figure>
+         <figure><img src="{% static '/pages/img/shape/cushion.png' %}" alt="cushion"></figure>
+         <figure><img src="{% static '/pages/img/shape/marquise.png' %}" alt="marquise"></figure>
+         <figure><img src="{% static '/pages/img/shape/heart.png' %}" alt="heart"></figure>
+         <figure><img src="{% static '/pages/img/shape/fancy.png' %}" alt="fancy"></figure>
+         <figure><img src="{% static '/pages/img/shape/other.png' %}" alt="other"></figure>
+         <figure><img src="{% static '/pages/img/shape/cabochon.png' %}" alt="cabochon"></figure>
+         <figure><img src="{% static '/pages/img/shape/cabochonstar.png' %}" alt="cabochonstar"></figure>
+
+
+
+    </section>
+
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/shape.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}

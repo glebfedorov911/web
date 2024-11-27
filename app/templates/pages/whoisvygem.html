@@ -1,0 +1,18 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex whoisvygem__content">
+        {% with card|safe as content %}
+        {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static 'pages/img/address.png' %}" alt=""></figure>
+    </section>
+    <div>
+        {% for item in list %}
+        <p>{{ item }}</p>
+        {% endfor %}
+    </div>
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/whoisvygem.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}

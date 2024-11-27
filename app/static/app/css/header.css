@@ -1,0 +1,75 @@
+@import "./variables.css";
+
+header {
+    position: relative;
+
+    width: 100%;
+    padding: 26px;
+    border-bottom: 1px solid var(--red);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    color: var(--red);
+}
+
+header > figure.logo {
+    max-width: 465px;
+    width: 100%;
+}
+
+header > figure.logo img {
+    width: 100%;
+}
+
+header > figure > p {
+    line-height: 62.17px;
+    font-weight: 300;
+    font-size: 51px;
+    letter-spacing: 8px;
+}
+
+header > figure > figcaption {
+    line-height: 17.07px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+header > button#lang-btn {
+    right: 50%;
+    transform: translate(50%);
+    position: absolute;
+
+    align-self: flex-end;
+
+    border: none;
+	outline: 0px;
+
+    cursor: pointer;
+
+    background: white;
+    color: inherit;
+}
+
+header > button#lang-btn > p {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    header > button#lang-btn {
+        position: static;
+        align-self: center;
+        right: 0;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header > button#lang-btn {
+        order: 3;
+    }
+}

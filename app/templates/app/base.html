@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/app/css/base.css' %}" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89XEP5L8YD"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+      gtag('config', 'G-89XEP5L8YD');
+    </script>
+</head>
+<body class="page-container">
+    {% include './header.html' %}
+    <main>
+        {% if page_title != '' %} <h2 class="page-title">{{ page_title | upper }}</h2> {% endif %}
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include './footer.html' %}
+</body>
+</html>

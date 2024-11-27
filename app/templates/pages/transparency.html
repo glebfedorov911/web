@@ -1,0 +1,20 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="flex transparency__content">
+        {% with card|safe as content %}
+        {% include "../components/card.html" with card_content=content %}
+        {% endwith %}
+        <figure><img src="{% static 'pages/img/transparent.png' %}" alt=""></figure>
+    </section>
+
+    <section class="flex flex-img-list">
+        <figure><img src="{% static '/pages/img/transparency/p-1.png' %}" alt=""></figure>
+        <figure><img src="{% static '/pages/img/transparency/pp-1.png' %}" alt=""></figure>
+        <figure><img src="{% static '/pages/img/transparency/np-1.png' %}" alt=""></figure>
+    </section>
+
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/transparency.css' %}" />
+    <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends '../app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section>
+        <article class="flex justify-between main-f-block">
+            <div class="flex flex-col img">
+                <figure>
+                <!-- Заменяем изображение на видео -->
+                <video controls autoplay muted>
+                    <source src="{% static '/pages/videos/vygem.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </figure>
+                <div class="flex justify-between">
+                    <figure>
+                        <img src="{% static '/pages/img/app-store.png' %}" alt="">
+                    </figure>
+                    <figure>
+                        <img src="{% static '/pages/img/google-play.png' %}" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1 class="red">... a few answers to questions and you<br>know the Value of Your GEMstone ...</h1>
+                <p>
+                    <b><a class="red" href="{% url 'whoisvygem' %}">Itroducing VYGEM</a>,</b>
+                    <br><br>
+                    an innovative application designed the value of precious gemstones ( Given the absence
+                    of a standardized pricing system for gemstones, it is important to note that our program
+                    calculates prices based on prevailing market value ranges).<br>Developed through a collaborative effort between a team of expert gemologists,
+                    cutting-edge artificial intelligence technology, and real-time monitoring of the gemstone
+                    market. Featuring a user-friendly interface, <b>VYGEM</b> caters to both seasoned professionals
+                    and newcomers in the realm of gemstone valuation.</p>
+                    <p ><a class="red" href="{% url 'download' %}">Download</a>.....<a class="red" href="{% url 'pay' %}">Free and paid versions of Vygem</a>.....<a class="red" href="{% url 'refund' %}">Refund Policy</a></p>
+
+
+            </div>
+        </article>
+
+            <article class="grid splines-block relative">
+                <h2 id="first-point" class="black">Calculation process</h2>
+                <div class="second-point">
+                    <h3 id="second-point" >determine the type of gem</h3>
+                    <ul>
+                        <li><a class="red" href="{% url 'gemname' %}">how to do this</a></li>
+                    </ul>
+                </div>
+                <div class="third-point">
+                    <h3 id="third-point" class="black">4 C +</h3>
+                    <ul>
+                        <li><a class="red" href="{% url 'carat' %}">carat</a></li>
+                        <li><a class="red" href="{% url 'color' %}">color</a></li>
+                        <li><a class="red" href="{% url 'clarity' %}">clarity</a></li>
+                        <li><a class="red" href="{% url 'transparency' %}">transparency</a></li>
+                        <li><a class="red" href="{% url 'brilliancy' %}">brilliancy</a></li>
+                        <li><a class="red" href="{% url 'cut' %}">cut</a></li>
+                        <li><a class="red" href="{% url 'shape' %}">shape</a></li>
+
+                    </ul>
+                </div>
+                <div class="fourth-point">
+                    <h3 id="fourth-point" class="black">get the result</h3>
+                    <ul>
+                        <li><a class="red" href="{% url 'valuenotprice' %}">why is the value not the price</a></li>
+                        <li><a class="red" href="{% url 'result' %}">result</a></li>
+                        <li><a class="red" href="{% url 'salepurchaseplan' %}">sale-purchase plan</a></li>
+                    </ul>
+                </div>
+
+                <div class="fifth-point">
+                    <h3 id="fifth-point" class="black">check the result</h3>
+                    <ul>
+                        <li><a class="red" href="{% url 'gemologist' %}">Gemologists</a></li>
+                    </ul>
+                </div>
+
+                <figure><img src="{% static '/pages/img/name.png' %}" alt=""></figure>
+
+<!--                <img class="absolute spline" style="left: 400px; top: 23px;" src="{% static '/pages/img/main-spline-1.svg' %}" alt="">-->
+<!--                <img class="absolute spline" style="left: -5px; top: 70px;" src="{% static '/pages/img/main-spline-2.svg' %}" alt="">-->
+<!--                <img class="absolute spline" style="left: 160px; top: 145px;" src="{% static '/pages/img/main-spline-3.svg' %}" alt="">-->
+<!--                <img class="absolute spline" style="left: -10px; top: 342px;" src="{% static '/pages/img/main-spline-4.svg' %}" alt="">-->
+<!--                <img class="absolute spline" style="left: 470px; top: 482px;" src="{% static '/pages/img/main-spline-5.svg' %}" alt="">-->
+
+            </article>
+
+        <link rel="stylesheet" type="text/css" href="{% static '/pages/css/main.css' %}" />
+
+    </section>
+
+{% endblock %}
+
