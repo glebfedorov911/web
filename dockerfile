@@ -17,5 +17,4 @@ ENV PYTHONUNBUFFERED=1 \
 EXPOSE 8000
 
 CMD ["sh", "-c", \
-    "./venv/bin/python manage.py makemigrations && ./venv/bin/python manage.py migrate && \
-    ./venv/bin/python -m python manage.py runserver"]
+    "./venv/bin/python manage.py makemigrations && ./venv/bin/python manage.py migrate && ./venv/bin/python manage.py runserver 0.0.0.0:8000"]
