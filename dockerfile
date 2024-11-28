@@ -16,7 +16,7 @@ ENV PYTHONUNBUFFERED=1 \
 
 EXPOSE 8000
 
-CMD ["sh", "-c", \
+CMD ["bash", "-c", \
     'echo "yes" | ./venv/bin/python manage.py collectstatic --noinput && \
     ./venv/bin/python manage.py makemigrations && \
     ./venv/bin/python manage.py migrate && \
