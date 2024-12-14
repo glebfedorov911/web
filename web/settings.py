@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS  = [
-    "http://212.34.153.229",
+    "http://212.34.153.229","https://vygem.info","http://vygem.info"
 ]
 
 # Application definition
