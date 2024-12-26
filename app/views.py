@@ -16,10 +16,10 @@ class CaratView(View):
         return render(request, 'pages/carat.html', {
             'title': 'Carat',
             'page_title': 'CARAT',
-            'card': '<b>The weight of the stone is an important characteristic when determining the value of the stone.</b> \
-                <p>If you have a precious gemstone with a very high weight for its type, a dilemma arises. The cost of the gemstone increases based on weight progression. However, once a certain price is reached, the gemstone may no longer be of interest due to its significantly increased price. Therefore, you may find that the gemstone is undervalued in our application. Selling it for a higher price could pose a significant challenge. However, it is worth trying, as anything is possible.</p>'
+            'card': '<b>The weight of the stone is an important characteristic when determining its value.</b> \
+                     <p> If you have a gemstone that is very heavy for its type, the following dilemma arises.The value of the gemstone increases in mathematical progression as the weight of the stone increases.However, once a certain price is reached, the gemstone may no longer be of interest due to its significantly increased price.Therefore, you may find that the gemstone is undervalued in our application.Selling it at a higher price may be a serious problem.However, it is worth trying, as everything is possible.</p>'
 
-            # 'list': [
+                                 # 'list': [
             #     'Afghanite',
             #     'Aquamarine 0.2 - 50 ct',
             #     'Alexandrite 0.1 - 5 ct. Первая группа',
@@ -115,7 +115,13 @@ class ValuenotpriceView(View):
         return render(request, 'pages/valuenotprice.html', {
             'title': 'VALUE NOT PRICE',
             'page_title': 'VALUE NOT PRICE',
-            'card': "<p>You may encounter precious gemstones in the market whose prices can vary significantly from the value proposed by VYGEM, both higher and lower.<br> If the price is lower than indicated in the application:<br> Carefully examine the precious gemstone. Possibilities include enhancement, incorrect identification, various forms of counterfeits. CERTIFICATION IS MANDATORY.<br><br> Can you buy a natural and untreated precious gemstone cheaper?<br> YES! If: The seller is unaware of current prices, the gemstone was inherited, or obtained through other means (including ILLEGAL ones), or the seller urgently needs money due to life circumstances.<br><br> Can you sell a natural and untreated precious gemstone for a higher price?<br> YES! If the Buyer is captivated by the gemstone (this is often the case), needs it for their collection, requires the specific gemstone for making jewelry, or if you wish to craft jewelry with your gemstone (wherein its value in the piece will be significantly higher). Selling for a higher price may require luck or time. </p>",
+            'card': """<p>In the market, you can encounter precious gemstones with prices that can vary significantly from the cost offered by VYGEM, both higher and lower.</p>
+            <h2>If the Price is Lower Than Calculated by Vygem:</h2>
+            <p>Carefully inspect the gemstone. Possible scenarios include enhancements, misidentification, and various forms of counterfeits. CERTIFICATION IS MANDATORY.</p>
+            <h2>Can the gemstone be natural and untreated if the price is lower than calculated by Vygem?:</h2>
+            <p>Yes! If: The seller does not know the current prices, the gemstone was inherited or obtained in another way (including ILLEGALLY), or the seller urgently needs money due to life circumstances.</p>
+            <h2>Is it Possible to Sell Natural Untreated Gemstones at a Higher Price than calculated by Vygem?</h2>
+            <p>Yes! If the Buyer is enchanted by the gemstone (this often happens), needs it for their collection, requires a specific gemstone for jewelry making, or if you want to create jewelry with your gemstone (where its value in the piece will be significantly higher). Selling at a higher price may require luck or time.</p>""",
             })
 
 
@@ -223,39 +229,33 @@ class PayView(View):
     @staticmethod
     def get(request):
         card_content = """
-            <p>Vygem is available in both free and paid versions.</p>
+                Vygem is available in both free and paid versions.
 
-            <p><strong>The free version of the app allows you to:</strong></p>
-            <ul>
-                <li>Determine the value of 10 different gemstones.</li>
-                <li>Locate gemologists on a world map.</li>
-                <li>View a limited version of user inquiries from the last 24 hours.</li>
-            </ul>
+                Free Version Features:
 
-            <p><strong>The paid version of the app allows you to:</strong></p>
-            <ul>
-                <li>Determine the value of 69 gemstones, with the number of gemstones \n increasing over time.</li>
-                <li>Locate gemologists on a world map.</li>
-                <li>Access the full version of user inquiries from the last 24 hours.</li>
-            </ul>
+                Price determination for 10 different gemstones.
+                Locate gemologists on the world map.
+                View a limited version of user queries for the last 24 hours.
 
-            <p><strong>Subscription Costs:</strong></p>
-            <ul>
-                <li><strong>Monthly Subscription:</strong> $35 per month</li>
-                <li><strong>Annual Subscription:</strong> $350 per year (equivalent to $29.17 per month)</li>
-            </ul>
+                Paid Version Features:
 
-            <p>You can pay for the subscription directly in the app by navigating to \n “About Us” and clicking the “PAY” button. Payment security and clarity \n are guaranteed by our partner, a comprehensive payment \n infrastructure provider for software development companies. We are \n currently in discussions with them for collaboration.</p>
+                Price determination for over 70 gemstones, with more being added over time.
+                Locate gemologists on the world map.
+                Access to a full version of user queries for the last 24 hours.
+                Subscription Cost:
 
-            <p>If you prefer to pay through another method, \nplease contact us at <a href="mailto:payment@vygem.info">payment@vygem.info</a>.</p>
+                Monthly Subscription: $35 per month
+                Annual Subscription: $350 per year (equivalent to $29.17 per month)
 
-            <p><strong>You can get the PAID version of the app for FREE:</strong></p>
-            <ul>
-                <li>If you make a significant contribution to the functionality and content \n of the app, the decision will be made by the Vaigem community on\n social media platforms.</li>
-                <li>If 6 users purchase the paid version of our app on your behalf. This\n
-                 offer will remain valid as long as the referred users maintain\n their paid subscription.</li>
-            </ul>
-            """
+                You can pay for your subscription directly in the app by going to the "About Us" section and clicking the "PAY" button. Security and transparency of payments are guaranteed by our partner, a provider of comprehensive payment infrastructure for software development companies — Lemonsqueezy.com. Lemonsqueezy.com was acquired this year by Stripe.com, one of the world leaders in online payment acceptance. This ensures safe app purchases with various payment options.
+
+                If you prefer to pay in another way, please contact us at payment@vygem.info.
+
+                You can get the PAID version of the app for FREE:
+
+                If you make a significant contribution to the functionality and content of the app, the decision will be made by the Vygem community on social networks.
+                If 6 users purchase the paid version of our app on your behalf. This offer will remain valid for you as long as the referred users maintain their paid subscription.
+                """
 
         return render(request, 'pages/pay.html', {
             'title': 'PAY',
@@ -301,19 +301,20 @@ class GemnameView(View):
     def get(request):
         card_content = """
             <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
-            <p><strong>Some Variety Definition:</strong></p>
-            <ul>
-                <li><strong>Cuprian Tourmaline:</strong> A tourmaline with a detectable presence of copper as a trace element.</li>
-                <li><strong>Indicolite Tourmaline:</strong> A tourmaline without detectable presence of copper as a trace element, whose color is pastel blue; blue; intense blue; vivid blue; deep blue; dark blue; neon blue; intense neon blue; vivid neon blue; pastel greenish blue; greenish blue; intense greenish blue; vivid greenish blue; or deep greenish blue.</li>
-                <li><strong>Cobalt Spinel:</strong> A spinel with detectable presence of cobalt as a trace element and as a chromophore.</li>
-                <li><strong>Ruby:</strong> A corundum colored mainly by chromium impurities. Ruby must be red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red only. Bi-color corundum whose color falls within the ruby variety may be called “Bi-color ruby & sapphire”.</li>
-                <li><strong>Sapphire:</strong> A corundum whose color is not red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red.</li>
-                <li><strong>Emerald:</strong> A beryl colored mainly by chromium and/or vanadium impurities. Emeralds must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-                <li><strong>Green Beryl:</strong> A beryl not colored by chromium and/or vanadium impurities. Green beryl must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-                <li><strong>Tsavorite:</strong> A grossular garnet colored mainly by chromium and/or vanadium impurities. Tsavorite must be green; intense green; vivid green; deep green; or dark green.</li>
-                <li><strong>Demantoid:</strong> An andradite garnet colored by chromium impurities. Demantoid must be pastel green; green; intense green; vivid green; deep green; dark green; pastel yellowish green; yellowish green; intense yellowish green; vivid yellowish green; or deep yellowish/brownish green.</li>
-            </ul>
             """
+            # <p><strong>Some Variety Definition:</strong></p>
+            # <ul>
+            #     <li><strong>Cuprian Tourmaline:</strong> A tourmaline with a detectable presence of copper as a trace element.</li>
+            #     <li><strong>Indicolite Tourmaline:</strong> A tourmaline without detectable presence of copper as a trace element, whose color is pastel blue; blue; intense blue; vivid blue; deep blue; dark blue; neon blue; intense neon blue; vivid neon blue; pastel greenish blue; greenish blue; intense greenish blue; vivid greenish blue; or deep greenish blue.</li>
+            #     <li><strong>Cobalt Spinel:</strong> A spinel with detectable presence of cobalt as a trace element and as a chromophore.</li>
+            #     <li><strong>Ruby:</strong> A corundum colored mainly by chromium impurities. Ruby must be red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red only. Bi-color corundum whose color falls within the ruby variety may be called “Bi-color ruby & sapphire”.</li>
+            #     <li><strong>Sapphire:</strong> A corundum whose color is not red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red.</li>
+            #     <li><strong>Emerald:</strong> A beryl colored mainly by chromium and/or vanadium impurities. Emeralds must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
+            #     <li><strong>Green Beryl:</strong> A beryl not colored by chromium and/or vanadium impurities. Green beryl must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
+            #     <li><strong>Tsavorite:</strong> A grossular garnet colored mainly by chromium and/or vanadium impurities. Tsavorite must be green; intense green; vivid green; deep green; or dark green.</li>
+            #     <li><strong>Demantoid:</strong> An andradite garnet colored by chromium impurities. Demantoid must be pastel green; green; intense green; vivid green; deep green; dark green; pastel yellowish green; yellowish green; intense yellowish green; vivid yellowish green; or deep yellowish/brownish green.</li>
+            # </ul>
+
         return render(request, 'pages/gemname.html', {
             'title': 'GEM NAME',
             'page_title': 'GEM NAME',
@@ -324,7 +325,16 @@ class SalePurchasePlanView(View):
     @staticmethod
     def get(request):
         card_content = """
-            <p>Thus, you are the owner of a gemstone and, thanks to the WaiGem application, you represent its approximate value.</p> <p>The purchase and sale of a gemstone should not be accompanied by strong emotions. Emotions are not friends of calculation. Emotions may hide important details from you.</p> <p>You have determined the characteristics of the gemstone for yourself. And according to these characteristics, you believe that the value of the gemstone is X dollars.</p> <p>Your counterpart may have their own opinion on the characteristics of the gemstone and, accordingly, on its value. To conclude a deal, you must reach mutual agreement on the characteristics and, as a result, on the price of the gemstone. One of the participants in the negotiation may try to influence the other by their authority. Respect professionalism, but do not hesitate to express your point of view. The argument "it seems to me" should not be accepted in a dispute; you must confirm your opinion on a particular parameter of the gemstone with examples (from certificates of reputable gemological laboratories, information from catalogs, the internet, and the history of sales of similar gemstones, etc.).</p> <h3>Examples of how the final price of the gemstone may change depending on the opinions of its characteristics:</h3> <ul> <li><strong>Form:</strong> The form of the gemstone does not significantly affect its value. For example, a round cut for a ruby is 15% cheaper than an emerald or octagonal cut.</li> <li><strong>Clarity:</strong> The largest difference in value is between gemstones with inclusions and those without. In many reputable laboratories, the method of determining clarity is as follows: carefully examine the gemstone with the naked eye and make a decision about which group to assign it to. The first group includes IF, VVS1-2, VS1-2, and SI1. The second group includes SI2, I1, I2, and I3. Then, begin a detailed description of the inclusions. The difference in value between adjacent categories may be 5-15% of the value, and between categories located between VS21 and I1, 15-30% of the value.</li> <li><strong>Transparency:</strong> Disputes over this parameter are rare. Sometimes, a gemstone may be slightly cloudy, which may reduce its value... However, if this cloudiness gives the gemstone an internal glow, its value increases.</li> <li><strong>Luster and fluorescence:</strong> The difference in value is significant. A gemstone without luster and fluorescence may differ in value from one with exceptional luster or fluorescence by 50% or more.</li> <li><strong>Color:</strong> Color is one of the main and controversial characteristics of a gemstone. The difference in value between adjacent shades of color is 5-10% of the value. However, when transitioning from one shade to another, where the main color can be easily seen, and where the shade is so darkened or lightened that it requires effort to determine the main color, the difference may reach 15-25% between adjacent shades of color.</li> <li><strong>Cutting quality:</strong> The difference in price between excellent and good cutting is not significant. It is equal to the cost of polishing and grinding the gemstone to achieve excellent quality. The difference between excellent and poor cutting is significant, as it may require re-cutting the gemstone to achieve the ideal shape. Re-cutting may reduce the weight of the gemstone to half. Exceptions are rare gemstones, such as a Burmese ruby with top characteristics, which may have poor cutting. This is done specifically to increase the weight of the gemstone. We consider this to be incorrect, but it exists.</li> </ul>
+            <p>Thus, you are the owner of a gemstone and, thanks to the Vygem application, you represent its approximate value.</p>
+            <p>The purchase and sale of a gemstone should not be accompanied by strong emotions. Emotions are not friends of calculation.
+            Emotions may hide important details from you.</p> <p>You have determined the characteristics of the gemstone for yourself. 
+            And according to these characteristics, you believe that the value of the gemstone is X dollars.</p>
+             <p>Your counterpart may have their own opinion on the characteristics of the gemstone and, accordingly, on its value. 
+             To conclude a deal, you must reach mutual agreement on the characteristics and, as a result, on the price of the gemstone.
+              One of the participants in the negotiation may try to influence the other by their authority. 
+              Respect professionalism, but do not hesitate to express your point of view.
+              The argument "it seems to me" should not be accepted in a dispute; you must confirm your opinion on a particular parameter of the gemstone with examples (from certificates of reputable gemological laboratories, information from catalogs, the internet, and the history of sales of similar gemstones, etc.).</p> <h3>Examples of how the final price of the gemstone may change depending on the opinions of its characteristics:</h3>
+               <ul> <li><strong>Form:</strong> The form of the gemstone does not significantly affect its value. For example, a round cut for a emerald is 15% cheaper than an emerald or octagonal cut.</li> <li><strong>Clarity:</strong> The largest difference in value is between gemstones with inclusions and those without. In many reputable laboratories, the method of determining clarity is as follows: carefully examine the gemstone with the naked eye and make a decision about which group to assign it to. The first group includes IF, VVS1-2, VS1-2, and SI1. The second group includes SI2, I1, I2, and I3. Then, begin a detailed description of the inclusions. The difference in value between adjacent categories may be 5-15% of the value, and between categories located between VS21 and I1, 15-30% of the value.</li> <li><strong>Transparency:</strong> Disputes over this parameter are rare. Sometimes, a gemstone may be slightly cloudy, which may reduce its value... However, if this cloudiness gives the gemstone an internal glow, its value increases.</li> <li><strong>Luster and fluorescence:</strong> The difference in value is significant. A gemstone without luster and fluorescence may differ in value from one with exceptional luster or fluorescence by 50% or more.</li> <li><strong>Color:</strong> Color is one of the main and controversial characteristics of a gemstone. The difference in value between adjacent shades of color is 5-10% of the value. However, when transitioning from one shade to another, where the main color can be easily seen, and where the shade is so darkened or lightened that it requires effort to determine the main color, the difference may reach 15-25% between adjacent shades of color.</li> <li><strong>Cutting quality:</strong> The difference in price between excellent and good cutting is not significant. It is equal to the cost of polishing and grinding the gemstone to achieve excellent quality. The difference between excellent and poor cutting is significant, as it may require re-cutting the gemstone to achieve the ideal shape. Re-cutting may reduce the weight of the gemstone to half. Exceptions are rare gemstones, such as a Burmese ruby with top characteristics, which may have poor cutting. This is done specifically to increase the weight of the gemstone. We consider this to be incorrect, but it exists.</li> </ul>
             """
         return render(request, 'pages/salepurchaseplan.html', {
             'title': 'Sale Purchase Plan',
@@ -338,19 +348,18 @@ class ResultView(View):
         return render(request, 'pages/result.html', {
             'title': 'Result',
             'page_title': 'Result',
-            'main_card': "<p>Inspect the alignment of facets, proportionality, and polish. These parameters influence the depth of color, play, and liveliness of the precious gemstone.</p>",\
+            'main_card': """<p>Upon receiving the stone valuation, suppress your emotions. This is crucial.</p>
 
-            'cards': [
-                    "Excellent cut: optimal angles of the crown and pavilion facets, correct orientation of anisotropic material, optimal proportions of linear dimensions, good facet junctions, excellent polish, uniformity of the girdle within the norms.",
-                    "Good cut: proper symmetry, reasonably correct proportions of linear and angular parameters, slight surface distortions, uniformity of the girdle within norms, surface with minor scratches and tool marks despite fairly good polish. Microscopic feathers may be concentrated on the girdle, barely discernible to the naked eye but easily seen under tenfold magnification.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish."
+<ol>
+    <li>Ensure the authenticity of your stone.<br>
+        To do this, consult a professional gemologist. You can do this either independently or by using our application's service.</li>
+    <li>Confirm that you have correctly specified the stone parameters.<br>
+        Review the valuation results by inputting parameters adjacent to those you initially provided. For instance, the clarity might be assessed differently by another expert as SI2 instead of SI1, resulting in a different price. This prepares you for hearing significantly different prices for your stone.</li>
+    <li>When you are prepared for objections from the counterparty and are ready to entertain a different price, have responses ready for all arising questions. Always remember that the counterparty's arguments must undergo scrutiny. Trust should not be granted without evidence.</li>
+</ol>
 
+<p>Respect the price proposed by the counterparty. It may indeed be below the market value. However, a buyer for this stone may not be available at the moment, requiring the investor to hold onto the stone in hopes of selling it in the future. They have the right to insurance against risks associated with their investment.</p> """
 
-                ]
         })
 
 class DownloadView(View):
@@ -359,8 +368,8 @@ class DownloadView(View):
         return render(request, 'pages/download.html', {
             'title': 'Download',
             'page_title': 'Download',
-            'main_card': "<p>1. <strong>Download</strong> the file.</p><p>2. <strong>Check</strong> the file for viruses.</p><p>3. <strong>Run</strong> the file on your device.</p><p>4. <strong>Fill out</strong> the registration form: your <em>email address</em> and <em>password</em>.</p><p>5. You can only use the application on the device where you <strong>registered</strong>.</p><p>6. If you want to <strong>transfer</strong> the application to another device in the future,</p><p>you need to <strong>install</strong> the application on the new device and specify the <em>email address</em> you used during your previous <strong>registration</strong>.</p><p>You will receive an <em>email request</em>, which you must <strong>confirm</strong> to <strong>link</strong> your account to the new device.</p><br><a href ='/static/pages/download/Vygem-1.0.0-arm64-v8a_armeabi-v7a-debug.apk' ><p>Vygem-1.0.0-arm64-v8a_armeabi-v7a-debug.apk</p></a>",\
-            'cards': [
+            'main_card': "<p>Our application is available for download on  <a href='https://play.google.com/store/apps/details?id=info.vygem.vygem'>Google Play</a>  as well as in the <a href='http://vygem.lemonsqueezy.com'>vygem.lemonsqueezy.com</a> service store. Initially, a free trial version is offered, allowing users to familiarize themselves with the app's features and decide whether to purchase the premium version with additional functionalities.</p>",
+               'cards': [
                     "We are used to the fact that all files downloaded from the Internet are subject to verification for the absence of malicious code. We use the site www.virustotal.com"\
 
                 ]
@@ -388,7 +397,7 @@ class RefundView(View):
                            <p>15 Calculations Limit: Users are allowed to conduct 15 calculations of the cost of precious stones before making a decision about the app's usefulness. This limit is intended to ensure that users have a sufficient opportunity to evaluate the app's features and functionality before requesting a refund.</p>
                             <p>Limited Functionality Access: Limited access to app functionality: users can view all calculations made in the app for the last 24 hours. After 7 calendar days of app usage, the user must make a decision about the app's usefulness. This limitation is also intended to ensure that users have a sufficient opportunity to evaluate the app's features and functionality before requesting a refund.</p>
                              <h2>Refund Exceptions</h2>
-                              <p>In special cases, refunds may be processed by Verifone, the company that handles payments for VYGEM. The refund timeline will be established by Verifone.</p>
+                              <p>In special cases, refunds may be processed by Lemonsqueezy.com, the company that handles payments for VYGEM. The refund timeline will be established by Lemonsqueezy.com.</p>
                                <h2>Future Access to Paid Version</h2>
                                 <p>If a user requests a refund, they may be denied future access to the paid version of VYGEM.</p>
                                  <h2>Communication</h2>

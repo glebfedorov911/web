@@ -8,16 +8,7 @@
         {% endwith %}
         <figure><img src="{% static '/pages/img/result.png' %}" alt=""></figure>
     </section>
-    <section class="flex imgs-block">
-        <figure class="first-diamond flex flex-col">
-            <img src="{% static '/pages/img/cut-diamond-1.png' %}" alt="">
-            <figcaption class="flex flex-col">
-                <b>Perfect cut</b>
-                <p>With this cut, the light entering the stone, reflecting from the pavilion, comes out through the crown. As a result, we get a glowing “live” stone.</p>
-            </figcaption>
-        </figure>
 
-    </section>
     <section class="flex flex-col card-list">
         {% for card in cards %}
         {% include "../components/card.html" with card_content=card %}
@@ -27,33 +18,3 @@
     <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
 {% endblock %}
 
-
-
-
-    <table border="1">
-        <tr>
-            <th>3332233223</th>
-            <th>43443</th>
-            <th>43434343</th>
-            <th>434334434334</th>
-        </tr>
-        <tr>
-            <td>777777777777777777</td>
-            <td>77777777777777777777</td>
-            <td>Cell 3, Row 1</td>
-            <td>Cell 4, Row 1</td>
-        </tr>
-        <tr>
-            <td>Cell 1, Row 2</td>
-            <td>Cell 2, Row 2</td>
-            <td>Cell 3, Row 2</td>
-            <td>Cell 4, Row 2</td>
-        </tr>
-        <!-- Add more rows here -->
-        <tr>
-            <td>Cell 1, Row 15</td>
-            <td>Cell 2, Row 15</td>
-            <td>Cell 3, Row 15</td>
-            <td>Cell 4, Row 15</td>
-        </tr>
-    </table>
