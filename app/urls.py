@@ -22,6 +22,8 @@ urlpatterns = [
     path('download/', DownloadView.as_view(), name='download'),
     path('refund/', RefundView.as_view(), name='refund'),
     path('whoisvygem/', WhoisvygemView.as_view(), name='whoisvygem'),
+
+    
 ]
 
 from django.conf import settings
