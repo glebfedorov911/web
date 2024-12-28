@@ -254,11 +254,11 @@ class PayView(View):
                 Lemon Squeezy offers secure checkouts, payment processing, global tax compliance and other services to make
                  compliance easy.
 
-                Your details are secure and encrypted
+                * Your details are secure and encrypted
 
-                Backed by Stripe payments
+                * Backed by Stripe payments
 
-                Multiple ways to pay
+                * Multiple ways to pay
 
                 By providing Vygem the above Merchant of Record services, you will see LEMSQZY* VYGEM appear on your bank
                 or card statement for this order.
