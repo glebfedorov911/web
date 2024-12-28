@@ -251,7 +251,8 @@ class PayView(View):
 
                 Secure checkout powered by Lemon Squeezy
                 Lemon Squeezy is a global Merchant of Record service provider to thousands of software companies worldwide. 
-                Lemon Squeezy offers secure checkouts, payment processing, global tax compliance and other services to make compliance easy.
+                Lemon Squeezy offers secure checkouts, payment processing, global tax compliance and other services to make
+                 compliance easy.
 
                 Your details are secure and encrypted
 
