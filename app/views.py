@@ -249,6 +249,20 @@ class PayView(View):
 
                 You can pay for your subscription directly in the app by going to the "About Us" section and clicking the "PAY" button. Security and transparency of payments are guaranteed by our partner, a provider of comprehensive payment infrastructure for software development companies — Lemonsqueezy.com. Lemonsqueezy.com was acquired this year by Stripe.com, one of the world leaders in online payment acceptance. This ensures safe app purchases with various payment options.
 
+                Secure checkout powered by Lemon Squeezy
+                Lemon Squeezy is a global Merchant of Record service provider to thousands of software companies worldwide. 
+                Lemon Squeezy offers secure checkouts, payment processing, global tax compliance and other services to make compliance easy.
+
+                Your details are secure and encrypted
+
+                Backed by Stripe payments
+
+                Multiple ways to pay
+
+                By providing Vygem the above Merchant of Record services, you will see LEMSQZY* VYGEM appear on your bank or card statement for this order.
+
+                If you have any questions relating to this order, visit Lemon Squeezy support
+
                 If you prefer to pay in another way, please contact us at payment@vygem.info.
 
                 You can get the PAID version of the app for FREE:
