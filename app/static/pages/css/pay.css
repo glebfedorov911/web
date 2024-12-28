@@ -5,15 +5,26 @@ section.pay__content {
     gap: 40px;
 }
 
-section.pay__content > figure {
-    width: 191.42px;
-    height: 411px;
-
-    object-fit: contain;
+section.pay__content > article.card,
+section.pay__content > article.card > ul > li {
+    font-size: 22px;
 }
 
-@media screen and (max-width: 768px) { 
-    section.pay__content {
-        flex-wrap: wrap;
-    }
+section.flex-img-list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.flex-img-list > figure {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.flex-img-list > figure > img {
+    object-fit: cover;
 }

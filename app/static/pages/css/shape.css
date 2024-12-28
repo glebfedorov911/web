@@ -5,7 +5,6 @@ section.shape__content {
     gap: 40px;
 }
 
-
 section.shape__content > article.card,
 section.shape__content > article.card > ul > li {
     font-size: 22px;
