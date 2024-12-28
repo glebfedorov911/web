@@ -260,7 +260,8 @@ class PayView(View):
 
                 Multiple ways to pay
 
-                By providing Vygem the above Merchant of Record services, you will see LEMSQZY* VYGEM appear on your bank or card statement for this order.
+                By providing Vygem the above Merchant of Record services, you will see LEMSQZY* VYGEM appear on your bank
+                or card statement for this order.
 
                 If you have any questions relating to this order, visit Lemon Squeezy support
 
