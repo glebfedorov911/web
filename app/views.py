@@ -93,7 +93,7 @@ class ColorView(View):
 	<p>This method is applicable to various <b>precious</b> and non-precious <b>stones</b>, such as <b>ruby</b>, <b>emerald</b>, and <b>sapphire</b>, whether they are <b>faceted</b> or cabochon. These color coefficients affect the <b>price per carat</b> of the <b>gem</b>. The color is only one aspect of quality of the <b>gems</b> and further quality analysis is recommended. Our system allows tracking <b>price trends</b> based on color grading.</p>
 
     <p>The red hue color table below illustrates the points of intersection between VYGEM's color methodology and GIA's color grading system.</p>
-    <img href = "/static/pages/img/color3.png" alt="gemstones gemstone gem"
+    <img href = "/static/pages/img/color3.png" alt="gemstones gemstone gem">
 	   <h3>Visual Color Assessment of Gemstones</h3>
 
     <p>Accurately assessing the color of a <b>gem</b> is a crucial step in evaluating its quality and value. Here’s a guide on how to visually assess <b>gemstone</b> color:</p>
