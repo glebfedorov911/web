@@ -120,9 +120,7 @@ class ColorView(View):
     </ul>
 		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
 
-    <h2>Basic Color Hues</h2>
-   <p>(List of basic colour hues would be added here.) </p>
-
+    
                             '''
             })
     
