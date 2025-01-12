@@ -68,9 +68,13 @@ class ColorView(View):
             'title': 'Color gemstones',
             'page_title': 'COLOR GEMSTONES',
             'card': '''
-            <h1>Analyzing Gemstones: A Color-Based Approach</h1>
+            <h2>Analyzing Gemstones: A Color-Based Approach</h2>
 
-    <p>Color is a crucial characteristic when evaluating any <b>gemstone</b>. Our team has developed a unique method for assessing <b>gem</b> color using advanced computer and spectral color analysis techniques. The core of our methodology lies in determining the percentage of the dominant hue. Based on this data, we propose a color gradation coefficient.</p>
+    <p>Color is a crucial characteristic when evaluating any <b>gemstone</b>. 
+    Our team has developed a unique method for assessing <b>gem</b>
+    color using advanced computer and spectral color analysis techniques. 
+    The core of our methodology lies in determining the percentage of the dominant hue.
+    Based on this data, we propose a color gradation coefficient.</p>
 
     <h2>Gem Color Grading Methodology</h2>
 
