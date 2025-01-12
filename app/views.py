@@ -151,10 +151,9 @@ class ClarityView(View):
         <li>Inclusions throughout the volume of the <b>gem</b> = (I1 – I3)</li>
     </ul>
 	<p>While we understand that some buyers and sellers may prefer these simplified categories, we feel it necessary to share our perspective. Even small, hard-to-see inclusions can impact not only a <b>gem's</b> uniqueness but also its brilliance. We believe it is unfair when a <b>gem</b> with multiple, tiny, barely visible inclusions is valued the same as a nearly flawless <b>gem</b> with minor, singular inclusions visible only under 10x magnification. Accurate assessment of <b>clarity gems</b> is vital for proper pricing.</p>
-
+    <br>
     <p>The accurate clarity grade contributes to the determination of a fair <b>price per carat</b> for any <b>precious gem</b> or <b>gemstone</b>.
 	</p>
-
                   '''
         })
     
