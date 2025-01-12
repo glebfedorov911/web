@@ -129,10 +129,40 @@ class ClarityView(View):
     @staticmethod
     def get(request):
         return render(request, 'pages/clarity.html', { 
-            'title': 'CLARITY',
+            'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY',
-            'card': "<p>Carefully inspect the precious gemstone for inclusions. Use a 10x loupe. Examine the precious gemstone from various angles. The clarity level indicates the absence of inclusions, cracks, spots, and other defects that affect the appearance and integrity of the precious gemstone. Precious gemstones are categorized into three clarity groups, each with different requirements.</p>",
-            })
+            'card': '''
+                  
+   
+    <h1>Understanding Clarity in Gemstones</h1>
+
+    <p>Clarity is a significant factor in assessing the value of <b>gemstones</b>. Many contemporary <b>gem</b> vendors categorize <b>gem</b> clarity into three broad categories:</p>
+
+    <h2>Common Gem Clarity Categories</h2>
+	<ul>
+		<li>Eye-clean</li>
+		<li>Inclusions on the periphery of the <b>gem</b></li>
+		<li>Inclusions throughout the volume of the <b>gem</b></li>
+	</ul>
+
+	 <p>However, these categories do not specify the size or number of inclusions. For individuals who find this methodology useful, we have approximated how these categories align with the clarity grading system used in our mobile application:</p>
+
+   <ul>
+        <li>Eye-clean = (VVS1 – VS2)</li>
+        <li>Inclusions on the periphery of the <b>gem</b> = (SI1 – SI2)</li>
+        <li>Inclusions throughout the volume of the <b>gem</b> = (I1 – I3)</li>
+    </ul>
+	
+    <p>While we understand that some buyers and sellers may prefer these simplified categories, we feel it necessary to share our perspective. Even small, hard-to-see inclusions can impact not only a <b>gem's</b> uniqueness but also its brilliance. We believe it is unfair when a <b>gem</b> with multiple, tiny, barely visible inclusions is valued the same as a nearly flawless <b>gem</b> with minor, singular inclusions visible only under 10x magnification. Accurate assessment of <b>clarity gems</b> is vital for proper pricing.</p>
+
+    <h2>Types and Degrees of Clarity in Gems</h2>
+	
+    
+	<br>
+	The accurate clarity grade contributes to the determination of a fair <b>price per carat</b> for any <b>precious gem</b> or <b>gemstone</b>.
+	</p>
+
+                  '''})
     
 
 
