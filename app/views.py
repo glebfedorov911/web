@@ -132,18 +132,15 @@ class ClarityView(View):
             'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY',
             'card': '''
-                  
-   
+
     <h1>Understanding Clarity in Gemstones</h1>
     <p>Clarity is a significant factor in assessing the value of <b>gemstones</b>. Many contemporary <b>gem</b> vendors categorize <b>gem</b> clarity into three broad categories:</p>
-
     <h2>Common Gem Clarity Categories</h2>
 	<ul>
 		<li>Eye-clean</li>
 		<li>Inclusions on the periphery of the <b>gem</b></li>
 		<li>Inclusions throughout the volume of the <b>gem</b></li>
 	</ul>
-
 	 <p>However, these categories do not specify the size or number of inclusions. For individuals who find this methodology useful, we have approximated how these categories align with the clarity grading system used in our mobile application:</p>
    <ul>
         <li>Eye-clean = (VVS1 – VS2)</li>
