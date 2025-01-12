@@ -67,55 +67,14 @@ class ColorView(View):
         return render(request, 'pages/color.html', {
             'title': 'Color',
             'page_title': 'COLOR',
-            'card': """"<h1>Analyzing Gemstones: A Color-Based Approach</h1>
-
-    <p>Color is a crucial characteristic when evaluating any <b>gemstone</b>. Our team has developed a unique method for assessing <b>gem</b> color using advanced computer and spectral color analysis techniques. The core of our methodology lies in determining the percentage of the dominant hue. Based on this data, we propose a color gradation coefficient.</p>
-
-    <h2>Gem Color Grading Methodology</h2>
-
-    <p>Our application employs the following approach for establishing <b>gemstone</b> value based on color. We utilize 32 primary hues as defined by the GIA. For each of these hues, we have constructed a "plane". On this plane, the x-axis represents "Saturation" – defining how pure and neutral the <b>stone's</b> color is. The y-axis represents "Brightness," describing the color's intensity, from light to dark. Each coordinate point within our color table signifies a specific percentage of the base hue. For example, in the "R (Red)" hue, point 1/1 might represent almost 100% red. Whereas point 2/4 might represent approximately 72% red. Consequently, a <b>gem</b> with a color matching point 2/4 would have a value that is 0.72 times the value of a <b>gem</b> at point 1/1. However, this is not universal. Once the base color percentage falls below 50% and the base color begins to "fade," we apply an additional discount to the <b>price per carat</b> of the <b>stone</b>.</p>
-
-    <p>For example:</p>
-
-    <ul>
-        <li>Bright/Medium (6/5) would have a coefficient of 1.</li>
-        <li>Bright/Light (6/3) would have a coefficient of 0.7.</li>
-         <li>Moderately Strong/Medium Light (4/4) would have a coefficient of 0.65.</li>
-    </ul>
-	
-    <h2> Gemstone Color Examples and Price Trends</h2>
-	<p>This method is applicable to various <b>precious</b> and non-precious <b>stones</b>, such as <b>ruby</b>, <b>emerald</b>, and <b>sapphire</b>, whether they are <b>faceted</b> or cabochon. These color coefficients affect the <b>price per carat</b> of the <b>gem</b>. The color is only one aspect of quality of the <b>gems</b> and further quality analysis is recommended. Our system allows tracking <b>price trends</b> based on color grading.</p>
-
-
-    <p>The red hue color table below illustrates the points of intersection between VYGEM's color methodology and GIA's color grading system.</p>
-	   <h1>Visual Color Assessment of Gemstones</h1>
-
-    <p>Accurately assessing the color of a <b>gem</b> is a crucial step in evaluating its quality and value. Here’s a guide on how to visually assess <b>gemstone</b> color:</p>
-
-    <h2>How to Visually Determine Gem Color</h2>
-
-    <ul>
-         <li>Observe the <b>gem</b> from a distance of 20-40 cm from your eyes. View it from all sides and at various angles. The <b>gem</b> should not be held in a static position while assessing its color.</li>
-	</ul>
-	
-	<h2>Factors Affecting Gemstone Color Perception</h2>
-
-    <p>When determining the color of a <b>gemstone</b>, be aware of these influencing factors:</p>
-    <ul>
-        <li>The color rendering of electronic device monitors varies between devices. Even different models from the same brand can display colors differently. Relying on a screen to assess color is not reliable.</li>
-        <li>Color consistency should be present throughout all parts of the <b>gem</b>. Uneven coloration can influence value.</li>
-        <li>Different lighting conditions will cause a <b>gemstone</b> to appear differently. The type and intensity of the light source are critical.</li>
-		<li>The perceived color of <b>gemstones</b> can vary depending on your geographical location (latitude). Those closer to the equator might perceive <b>gems</b> as lighter and more vibrant, while in higher latitudes, they might seem duller. </li>
-        <li>When examining <b>gemstones</b> with trendy colors like “Pigeon Blood,” “Padparadscha,” “Royal Blue,” “Cornflower,” “Lavender,” “Teal,” “Paraiba,” “Santa Maria,” and “Muzo Green,” remember that what constitutes a “trendy” color is very subjective. These colours are often used to describe desirable hues of <b>precious</b> <b>gems</b>. Only if the color is confirmed and specified in certificates from reputable gemological laboratories should it be considered accurate.</li>
-		<li>Always be mindful of the colors and lighting in the room where you are conducting your <b>gem</b> examination. The color of the background surface where the <b>gem</b> is placed is also very important. Neutral backgrounds are recommended for color grading.</li>
-        <li>Conduct your examination only in daylight. Avoid any artificial lighting!</li>
-        <li>Take the time to study materials available online regarding this subject. Theoretical knowledge does not replace the experience of professional gemologists gained through examining a vast number of <b>gems</b>. However, it will enable you to understand a specialist's assessment and communicate effectively with them.</li>
-    </ul>
-	
-	 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
-
-    <h2>Basic Color Hues</h2>
-   <p>(List of basic colour hues would be added here.) </p>
+            'card': "<p>Color is the most important characteristic when evaluating a gemstone.</p> \
+                <p>Our team has developed a methodology for determining the color of a gemstone based on computer and spectral color analysis. The essence of the methodology lies in determining the percentage of the base color hue and based on the data obtained, we propose to determine the color grading coefficient.</p> \
+                <p>Our application utilizes the following methodology to determine the value of a gemstone based on its color. We take 32 basic color hues used by the GIA. For each basic hue, we have compiled a table representing a 'plane' where the abscissa represents 'Saturation', determining how pure and neutral the color of the stone is, and the ordinate represents 'Brightness', determining the intensity of the color from light to dark. At each coordinate point in our color table, the color contains a certain amount of the base color hue in percentage. For example, for the color hue 'R (Red)', the first point 1/1 will contain almost 100% red color. And the second point 2/4 will contain approximately 72% red color. Therefore, the value of a stone with a color matching the second point will be the value of the first point multiplied by 0.72. However, this does not apply to the entire table. Once the amount of the base color crosses the 50% threshold and the base color starts to 'fade', we add an additional discount coefficient to the stone value.</p> \
+                <p>For example:<br> \
+                Vivid/Medium (6/5) will have a coefficient of 1.<br> \
+                Vivid/Light (6/3) will have a coefficient of 0.7<br> \
+                Moderately strong/Medium light (4/4) will have a coefficient of 0.65<br></p> \
+                <p>Using the example of the color table for the Red color hue presented below, the 'points of contact' between the VYGEM color methodology and the GIA color system are illustrated.</p>\n"
 
             })
     
@@ -156,16 +115,14 @@ class ValuenotpriceView(View):
         return render(request, 'pages/valuenotprice.html', {
             'title': 'VALUE NOT PRICE',
             'page_title': 'VALUE NOT PRICE',
-            'card': """
-                    <p>In the market, you can encounter precious gemstones with prices that can vary significantly from the cost offered by VYGEM, both higher and lower.</p>
-                        <h2>If the Price is Lower Than Calculated by Vygem:</h2>
-                        <p>Carefully inspect the gemstone. Possible scenarios include enhancements, misidentification, and various forms of counterfeits. CERTIFICATION IS MANDATORY.</p>
-                        <h2>Can the gemstone be natural and untreated if the price is lower than calculated by Vygem?:</h2>
-                        <p>Yes! If: The seller does not know the current prices, the gemstone was inherited or obtained in another way (including ILLEGALLY), or the seller urgently needs money due to life circumstances.</p>
-                        <h2>Is it Possible to Sell Natural Untreated Gemstones at a Higher Price than calculated by Vygem?</h2>
-                        <p>Yes! If the Buyer is enchanted by the gemstone (this often happens), needs it for their collection, requires a specific gemstone for jewelry making, or if you want to create jewelry with your gemstone (where its value in the piece will be significantly higher). Selling at a higher price may require luck or time.</p>
-                    """,
-                        })
+            'card': """<p>In the market, you can encounter precious gemstones with prices that can vary significantly from the cost offered by VYGEM, both higher and lower.</p>
+            <h2>If the Price is Lower Than Calculated by Vygem:</h2>
+            <p>Carefully inspect the gemstone. Possible scenarios include enhancements, misidentification, and various forms of counterfeits. CERTIFICATION IS MANDATORY.</p>
+            <h2>Can the gemstone be natural and untreated if the price is lower than calculated by Vygem?:</h2>
+            <p>Yes! If: The seller does not know the current prices, the gemstone was inherited or obtained in another way (including ILLEGALLY), or the seller urgently needs money due to life circumstances.</p>
+            <h2>Is it Possible to Sell Natural Untreated Gemstones at a Higher Price than calculated by Vygem?</h2>
+            <p>Yes! If the Buyer is enchanted by the gemstone (this often happens), needs it for their collection, requires a specific gemstone for jewelry making, or if you want to create jewelry with your gemstone (where its value in the piece will be significantly higher). Selling at a higher price may require luck or time.</p>""",
+            })
 
 
 class TermsView(View):
