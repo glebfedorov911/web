@@ -162,7 +162,8 @@ class ClarityView(View):
 	The accurate clarity grade contributes to the determination of a fair <b>price per carat</b> for any <b>precious gem</b> or <b>gemstone</b>.
 	</p>
 
-                  '''})
+                  '''
+        })
     
 
 
