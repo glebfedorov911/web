@@ -71,41 +71,43 @@ class ColorView(View):
             <h2>Analyzing Gemstones: A Color-Based Approach</h2>
 
     <p>Color is a crucial characteristic when evaluating any <b>gemstone</b>. 
-    Our team has developed a unique method for assessing <b>gem</b>
-    color using advanced computer and spectral color analysis techniques. 
+    Our team has developed a unique method for assessing <b>gem</b> color using advanced computer and spectral color analysis techniques. 
     The core of our methodology lies in determining the percentage of the dominant hue.
     Based on this data, we propose a color gradation coefficient.</p>
 
     <h2>Gem Color Grading Methodology</h2>
 
-    <p>Our application employs the following approach for establishing <b>gemstone</b> value based on color. We utilize 32 primary hues as defined by the GIA. For each of these hues, we have constructed a "plane". On this plane, the x-axis represents "Saturation" – defining how pure and neutral the <b>stone's</b> color is. The y-axis represents "Brightness," describing the color's intensity, from light to dark. Each coordinate point within our color table signifies a specific percentage of the base hue. For example, in the "R (Red)" hue, point 1/1 might represent almost 100% red. Whereas point 2/4 might represent approximately 72% red. Consequently, a <b>gem</b> with a color matching point 2/4 would have a value that is 0.72 times the value of a <b>gem</b> at point 1/1. However, this is not universal. Once the base color percentage falls below 50% and the base color begins to "fade," we apply an additional discount to the <b>price per carat</b> of the <b>stone</b>.</p>
+    <p>Our application employs the following approach for establishing <b>gemstone</b> value based on color. 
+    We utilize 32 primary hues as defined by the GIA. For each of these hues, we have constructed a "plane". On this plane, the x-axis represents "Saturation" – defining how pure and neutral the <b>stone's</b> color is. The y-axis represents "Brightness," describing the color's intensity, from light to dark. Each coordinate point within our color table signifies a specific percentage of the base hue.
+    For example, in the "R (Red)" hue, point 1/1 might represent almost 100% red. Whereas point 2/4 might represent approximately 72% red. 
+    Consequently, a <b>gem</b> with a color matching point 2/4 would have a value that is 0.72 times the value of a <b>gem</b> at point 1/1.
+    However, this is not universal. Once the base color percentage falls below 50% and the base color begins to "fade," we apply an additional discount to the <b>price per carat</b> of the <b>stone</b>.</p>
 
     <p>For example:</p>
-
     <ul>
         <li>Bright/Medium (6/5) would have a coefficient of 1.</li>
         <li>Bright/Light (6/3) would have a coefficient of 0.7.</li>
          <li>Moderately Strong/Medium Light (4/4) would have a coefficient of 0.65.</li>
     </ul>
-	
-    <h2> Gemstone Color Examples and Price Trends</h2>
+	<h2> Gemstone Color Examples and Price Trends</h2>
 	<p>This method is applicable to various <b>precious</b> and non-precious <b>stones</b>, such as <b>ruby</b>, <b>emerald</b>, and <b>sapphire</b>, whether they are <b>faceted</b> or cabochon. These color coefficients affect the <b>price per carat</b> of the <b>gem</b>. The color is only one aspect of quality of the <b>gems</b> and further quality analysis is recommended. Our system allows tracking <b>price trends</b> based on color grading.</p>
 
-
     <p>The red hue color table below illustrates the points of intersection between VYGEM's color methodology and GIA's color grading system.</p>
-	   <h1>Visual Color Assessment of Gemstones</h1>
+    <img href = "/static/pages/img/color3.png" alt="gemstones gemstone gem"
+	   <h3>Visual Color Assessment of Gemstones</h3>
 
     <p>Accurately assessing the color of a <b>gem</b> is a crucial step in evaluating its quality and value. Here’s a guide on how to visually assess <b>gemstone</b> color:</p>
 
     <h2>How to Visually Determine Gem Color</h2>
-
     <ul>
-         <li>Observe the <b>gem</b> from a distance of 20-40 cm from your eyes. View it from all sides and at various angles. The <b>gem</b> should not be held in a static position while assessing its color.</li>
+         <li>Observe the <b>gem</b> from a distance of 20-40 cm from your eyes. 
+         View it from all sides and at various angles.
+         The <b>gem</b> should not be held in a static position while assessing its color.</li>
 	</ul>
 	
 	<h2>Factors Affecting Gemstone Color Perception</h2>
 
-    <p>When determining the color of a <b>gemstone</b>, be aware of these influencing factors:</p>
+    <p>When determining the color of a <b>gemstone</b>, be aware of these influencing factors:</p></br>
     <ul>
         <li>The color rendering of electronic device monitors varies between devices. Even different models from the same brand can display colors differently. Relying on a screen to assess color is not reliable.</li>
         <li>Color consistency should be present throughout all parts of the <b>gem</b>. Uneven coloration can influence value.</li>
@@ -116,8 +118,7 @@ class ColorView(View):
         <li>Conduct your examination only in daylight. Avoid any artificial lighting!</li>
         <li>Take the time to study materials available online regarding this subject. Theoretical knowledge does not replace the experience of professional gemologists gained through examining a vast number of <b>gems</b>. However, it will enable you to understand a specialist's assessment and communicate effectively with them.</li>
     </ul>
-	
-	 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
+		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
 
     <h2>Basic Color Hues</h2>
    <p>(List of basic colour hues would be added here.) </p>
