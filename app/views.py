@@ -40,7 +40,28 @@ class CutView(View):
         return render(request, 'pages/cut-gemstones.html', {
             'title': 'Cut gemstomes',
             'page_title': 'CUT gemstones',
-            'main_card': "<p>Inspect the alignment of facets, proportionality, and polish. These parameters influence the depth of color, play, and liveliness of the precious gemstone.</p>",\
+            'main_card': '''
+                <h1>Assessing the Cut of Gemstones</h1>
+
+    <p>The cut of a <b>gemstone</b> is a critical factor that greatly influences its brilliance, fire, and overall beauty. A well-cut <b>gem</b> will maximize light return, enhancing its visual appeal. When evaluating the cut of a <b>gem</b>, pay close attention to the following:</p>
+
+    <h2>Key Aspects of Gem Cut Evaluation</h2>
+    <ul>
+        <li><b>Facet Alignment:</b> Examine the precision with which the facets meet, especially at the culet (the point at the bottom of the <b>gem</b>). Ensure there is no culet facet (flat point at the bottom instead of a point), which is sometimes done to save weight but detracts from brilliance. **A sharp, well-defined point is ideal, unless a specific type of cut requires a different configuration**.</li>
+        <li><b>Symmetry:</b> For round brilliant cuts, when viewed from above, you should see two equally sized squares that are slightly offset from each other. When inspecting other shapes, look for consistent symmetry throughout the <b>gemstone</b>. **Symmetry is critical for light performance and overall visual appeal**.</li>
+        <li><b>Girdle:</b> The girdle, the narrow band around the circumference of the <b>gem</b>, should be neither too thin nor too thick. **An overly thin girdle can make the stone prone to chipping, while an overly thick girdle adds unnecessary weight without enhancing the appearance**.</li>
+        <li><b>Visual Size and Cut Proportions:</b> A deeper cut will make a <b>gem</b> appear smaller face-up, while a shallower cut will make it seem larger for the same carat weight. **Optimal cut proportions are crucial for maximising brilliance and perceived size**.</li>
+        <li><b>Windowing:</b> A "window" is when you look at the center of the <b>gem</b> and see a hollow area, rather than light reflecting back from within. This occurs when light passes straight through the <b>gem</b> instead of being reflected back to the eye. **A well-cut gem should not have a visible window, ensuring maximum brilliance and light return**.</li>
+       <li><b>Ideal Height Proportions:</b> The height of the <b>gem</b> should ideally be approximately 70% of its diameter or width. **These proportions are generally considered ideal for optimum light performance**.</li>
+        <li><b>Chips and Damage:</b> Look for any chips, especially those that reach the surface (especially on the face-up side of the <b>gem</b>). **Surface-reaching chips can dramatically decrease a gem's value and durability**.</li>
+    </ul>
+	<p> It’s important to examine both the proportions and the craftsmanship of the cut to fully understand its impact on the overall appearance of the <b>gem</b>. <b>Many rare and precious gems are often cut poorly in an attempt to retain as much weight as possible. This can diminish the gem's brilliance and perfection, which often compromises the inherent beauty of the gemstone in favor of maximizing the price per carat.</b></p>
+
+    <h2>The Sad Reality</h2>
+
+    <p>It's disheartening when <b>gems</b> are sacrificed for weight retention, reducing their beauty and optimal light performance. **We believe that an excellent cut enhances a gem's inherent beauty and value, far more than weight alone. We always advise to choose quality over weight.**.</p>
+	<p>Proper assessment of a <b>gem's</b> cut helps to determine a fair <b>price per carat</b> and also ensures that the inherent potential of the <b>gemstone</b> is realised. Ignoring the quality of cut when evaluating <b>clarity gems</b> can significantly diminish a <b>gem's</b> overall appeal and value.</p>
+            ''',\
 
             'cards': [
                     "Excellent cut: optimal angles of the crown and pavilion facets, correct orientation of anisotropic material, optimal proportions of linear dimensions, good facet junctions, excellent polish, uniformity of the girdle within the norms.",
