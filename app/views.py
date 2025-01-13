@@ -37,8 +37,8 @@ class FreeVygemView(View):
 class CutView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/cut.html', { 
-            'title': 'Cut',
+        return render(request, 'pages/cut.html', {
+            'title': 'Cut gemstomes',
             'page_title': 'CUT',
             'main_card': "<p>Inspect the alignment of facets, proportionality, and polish. These parameters influence the depth of color, play, and liveliness of the precious gemstone.</p>",\
 
