@@ -23,9 +23,4 @@ urlpatterns = [
     path('refund/', RefundView.as_view(), name='refund'),
     path('whoisvygem/', WhoisvygemView.as_view(), name='whoisvygem'),
 
-
-
-
-
-
 ]
