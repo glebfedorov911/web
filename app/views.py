@@ -62,7 +62,6 @@ class CutView(View):
     <p>It's disheartening when <b>gems</b> are sacrificed for weight retention, reducing their beauty and optimal light performance. **We believe that an excellent cut enhances a gem's inherent beauty and value, far more than weight alone. We always advise to choose quality over weight.**.</p>
 	<p>Proper assessment of a <b>gem's</b> cut helps to determine a fair <b>price per carat</b> and also ensures that the inherent potential of the <b>gemstone</b> is realised. Ignoring the quality of cut when evaluating <b>clarity gems</b> can significantly diminish a <b>gem's</b> overall appeal and value.</p>
             ''',\
-
             'cards': [
                     "Excellent cut: optimal angles of the crown and pavilion facets, correct orientation of anisotropic material, optimal proportions of linear dimensions, good facet junctions, excellent polish, uniformity of the girdle within the norms.",
                     "Good cut: proper symmetry, reasonably correct proportions of linear and angular parameters, slight surface distortions, uniformity of the girdle within norms, surface with minor scratches and tool marks despite fairly good polish. Microscopic feathers may be concentrated on the girdle, barely discernible to the naked eye but easily seen under tenfold magnification.",
