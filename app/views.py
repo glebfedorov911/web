@@ -39,7 +39,7 @@ class CutView(View):
     def get(request):
         return render(request, 'pages/cut.html', {
             'title': 'Cut gemstomes',
-            'page_title': 'CUT',
+            'page_title': 'CUT gemstones',
             'main_card': "<p>Inspect the alignment of facets, proportionality, and polish. These parameters influence the depth of color, play, and liveliness of the precious gemstone.</p>",\
 
             'cards': [
