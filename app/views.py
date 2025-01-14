@@ -41,7 +41,7 @@ class CutView(View):
             'title': 'Cut gemstomes',
             'page_title': 'CUT gemstones',
             'main_card': '''
-                <h1>Assessing the Cut of Gemstones</h1>
+                <h1>Assessing  the Cut of Gemstones</h1>
 
     <p>The cut of a <b>gemstone</b> is a critical factor that greatly influences its brilliance, fire, and overall beauty. A well-cut <b>gem</b> will maximize light return, enhancing its visual appeal. When evaluating the cut of a <b>gem</b>, pay close attention to the following:</p>
 
@@ -407,18 +407,6 @@ class GemnameView(View):
         card_content = """
             <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
             """
-        # <p><strong>Some Variety Definition:</strong></p>
-        # <ul>
-        #     <li><strong>Cuprian Tourmaline:</strong> A tourmaline with a detectable presence of copper as a trace element.</li>
-        #     <li><strong>Indicolite Tourmaline:</strong> A tourmaline without detectable presence of copper as a trace element, whose color is pastel blue; blue; intense blue; vivid blue; deep blue; dark blue; neon blue; intense neon blue; vivid neon blue; pastel greenish blue; greenish blue; intense greenish blue; vivid greenish blue; or deep greenish blue.</li>
-        #     <li><strong>Cobalt Spinel:</strong> A spinel with detectable presence of cobalt as a trace element and as a chromophore.</li>
-        #     <li><strong>Ruby:</strong> A corundum colored mainly by chromium impurities. Ruby must be red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red only. Bi-color corundum whose color falls within the ruby variety may be called “Bi-color ruby & sapphire”.</li>
-        #     <li><strong>Sapphire:</strong> A corundum whose color is not red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red.</li>
-        #     <li><strong>Emerald:</strong> A beryl colored mainly by chromium and/or vanadium impurities. Emeralds must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-        #     <li><strong>Green Beryl:</strong> A beryl not colored by chromium and/or vanadium impurities. Green beryl must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-        #     <li><strong>Tsavorite:</strong> A grossular garnet colored mainly by chromium and/or vanadium impurities. Tsavorite must be green; intense green; vivid green; deep green; or dark green.</li>
-        #     <li><strong>Demantoid:</strong> An andradite garnet colored by chromium impurities. Demantoid must be pastel green; green; intense green; vivid green; deep green; dark green; pastel yellowish green; yellowish green; intense yellowish green; vivid yellowish green; or deep yellowish/brownish green.</li>
-        # </ul>
 
         return render(request, 'pages/gemname.html', {
             'title': 'GEM NAME',
