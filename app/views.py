@@ -5,9 +5,9 @@ from django.shortcuts import render
 class MainView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/main.html', { 
+        return render(request, 'pages/main.html', {
             'title': 'Vygem',
-            })
+        })
 
 
 class CaratView(View):
@@ -19,19 +19,19 @@ class CaratView(View):
             'card': '<b>The weight of the stone is an important characteristic when determining its value.</b> \
                      <p> If you have a gemstone that is very heavy for its type, the following dilemma arises.The value of the gemstone increases in mathematical progression as the weight of the stone increases.However, once a certain price is reached, the gemstone may no longer be of interest due to its significantly increased price.Therefore, you may find that the gemstone is undervalued in our application.Selling it at a higher price may be a serious problem.However, it is worth trying, as everything is possible.</p>'
 
-                                 # 'list': [
+            # 'list': [
             #     'Afghanite',
             #     'Aquamarine 0.2 - 50 ct',
             #     'Alexandrite 0.1 - 5 ct. Первая группа',
             #     'Amblygonite  0.25 - 22 ct',
             #     ]
-            })
+        })
 
 
 class FreeVygemView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/free-vygem.html', { 'title': 'Vygem', 'page_title': '' })
+        return render(request, 'pages/free-vygem.html', {'title': 'Vygem', 'page_title': ''})
 
 
 class CutView(View):
@@ -61,24 +61,24 @@ class CutView(View):
 
     <p>It's disheartening when <b>gems</b> are sacrificed for weight retention, reducing their beauty and optimal light performance. **We believe that an excellent cut enhances a gem's inherent beauty and value, far more than weight alone. We always advise to choose quality over weight.**.</p>
 	<p>Proper assessment of a <b>gem's</b> cut helps to determine a fair <b>price per carat</b> and also ensures that the inherent potential of the <b>gemstone</b> is realised. Ignoring the quality of cut when evaluating <b>clarity gems</b> can significantly diminish a <b>gem's</b> overall appeal and value.</p>
-            ''',\
+            ''', \
             'cards': [
-                    "Excellent cut: optimal angles of the crown and pavilion facets, correct orientation of anisotropic material, optimal proportions of linear dimensions, good facet junctions, excellent polish, uniformity of the girdle within the norms.",
-                    "Good cut: proper symmetry, reasonably correct proportions of linear and angular parameters, slight surface distortions, uniformity of the girdle within norms, surface with minor scratches and tool marks despite fairly good polish. Microscopic feathers may be concentrated on the girdle, barely discernible to the naked eye but easily seen under tenfold magnification.",
-                    "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish."
-                ]
-            })
+                "Excellent cut: optimal angles of the crown and pavilion facets, correct orientation of anisotropic material, optimal proportions of linear dimensions, good facet junctions, excellent polish, uniformity of the girdle within the norms.",
+                "Good cut: proper symmetry, reasonably correct proportions of linear and angular parameters, slight surface distortions, uniformity of the girdle within norms, surface with minor scratches and tool marks despite fairly good polish. Microscopic feathers may be concentrated on the girdle, barely discernible to the naked eye but easily seen under tenfold magnification.",
+                "Poor cut - significant cut flaws, visible to the naked eye, asymmetrical facet arrangements, severe proportion deviations, significant surface distortion, lack of parallelism between table and girdle, major chips and scratches. Poor polish."
+            ]
+        })
 
 
 class TransparencyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/transparency.html', { 
+        return render(request, 'pages/transparency.html', {
             'title': 'Transparency',
             'page_title': 'TRANSPARENCY',
             'card': 'Transparency is understood as the ability of a solid substance to allow light rays to pass through to some degree. The transparency depends on the structure of the crystals, the presence of cracks, solid and gas-liquid inclusions, which hinder the passage of light through the stone. Transparency is visually determined by viewing the stone in transmitted light. Gemstones are classified by their transparency level as follows: \
                 <ul><li>Transparent: all colorless and lightly colored gemstones, through which objects are clearly visible when viewed;</li><li>Translucent: gemstones through which objects are somewhat visible but not clearly;</li><li>Opaque: gemstones through which no light passes through.</li></ul> \
-                The degree of transparency, namely the values of the transparency coefficient and the absorption coefficient, can be determined quantitatively using spectrophotometers.' })
+                The degree of transparency, namely the values of the transparency coefficient and the absorption coefficient, can be determined quantitatively using spectrophotometers.'})
 
 
 class ColorView(View):
@@ -124,7 +124,7 @@ class ColorView(View):
          View it from all sides and at various angles.
          The <b>gem</b> should not be held in a static position while assessing its color.</li>
 	</ul>
-	
+
 	<h2>Factors Affecting Gemstone Color Perception</h2>
 
     <p>When determining the color of a <b>gemstone</b>, be aware of these influencing factors:</p></br>
@@ -140,15 +140,15 @@ class ColorView(View):
     </ul>
 		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
 
-    
+
                             '''
-            })
-    
+        })
+
 
 class ClarityView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/clarity.html', { 
+        return render(request, 'pages/clarity.html', {
             'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY',
             'card': '''
@@ -173,8 +173,6 @@ class ClarityView(View):
 	</p>
                   '''
         })
-    
-
 
 
 class BrilliancyView(View):
@@ -184,7 +182,8 @@ class BrilliancyView(View):
             'title': 'BRILLIANCY',
             'page_title': 'BRILLIANCY',
             'card': "<p> Evaluating Brilliance and Neon Glow of the Precious Gemstone.</br> Fluorescence is a glow around the stone. Some stones from one deposit have a glow, while others do not. The difference in price is significant.</p>",
-            })
+        })
+
 
 class ShapeView(View):
     @staticmethod
@@ -193,7 +192,8 @@ class ShapeView(View):
             'title': 'SHAPE',
             'page_title': 'SHAPE',
             'card': "<p>The cost may vary slightly based on selecting the preferred cut for the particular precious gemstone</p>",
-            })
+        })
+
 
 class ValuenotpriceView(View):
     @staticmethod
@@ -208,7 +208,7 @@ class ValuenotpriceView(View):
             <p>Yes! If: The seller does not know the current prices, the gemstone was inherited or obtained in another way (including ILLEGALLY), or the seller urgently needs money due to life circumstances.</p>
             <h2>Is it Possible to Sell Natural Untreated Gemstones at a Higher Price than calculated by Vygem?</h2>
             <p>Yes! If the Buyer is enchanted by the gemstone (this often happens), needs it for their collection, requires a specific gemstone for jewelry making, or if you want to create jewelry with your gemstone (where its value in the piece will be significantly higher). Selling at a higher price may require luck or time.</p>""",
-            })
+        })
 
 
 class TermsView(View):
@@ -251,7 +251,8 @@ class TermsView(View):
             'title': 'TERMS AND CONDITIONS',
             'page_title': 'TERMS AND CONDITIONS',
             'card': card_content
-            })
+        })
+
 
 class PrivacyView(View):
     @staticmethod
@@ -261,14 +262,14 @@ class PrivacyView(View):
 
             <h3>Introduction</h3>
             <p>This Privacy Policy outlines how we collect, use, disclose, and protect your information when you use our mobile application (hereinafter referred to as "the App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
-            
+
             <h3>Information We Collect</h3>
             <ul>
                 <li><strong>Personal Information:</strong> We may collect personal information such as your name, email address when you subscribe to our services or contact us.</li>
                 <li><strong>Usage Data:</strong> We automatically collect information about how the App is accessed and used, including your device's Internet Protocol (IP) address, ID your device, browser type, pages visited, and the time and date of your visits.</li>
                 <li><strong>Gemstone Valuation Data:</strong> When you use the App to estimate the value of gemstones, the data you input will be stored to provide you with a better experience.</li>
             </ul>
-            
+
             <h3>How We Use Your Information</h3>
             <ul>
                 <li>To provide and maintain our App and services.</li>
@@ -279,17 +280,17 @@ class PrivacyView(View):
                 <li>To monitor the usage of the App.</li>
                 <li>To detect, prevent, and address technical issues.</li>
             </ul>
-            
+
             <h3>Disclosure of Your Information</h3>
             <p>We will not sell, trade, or transfer your personal information to outside parties without your consent, except in the following cases:</p>
             <ul>
                 <li><strong>Service Providers:</strong> We may employ third-party companies and individuals to facilitate our App ("Service Providers"), provide the App on our behalf, perform App-related services, or assist us in analyzing how our App is used.</li>
                 <li><strong>Legal Requirements:</strong> We may disclose your personal information if required to do so by law or in response to valid requests by public authorities.</li>
             </ul>
-            
+
             <h3>Data Security</h3>
             <p>The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
-            
+
             <h3>Your Rights</h3>
             <p>You have the right to:</p>
             <ul>
@@ -297,7 +298,7 @@ class PrivacyView(View):
                 <li>Withdraw your consent to the processing of your personal information at any time, where we rely on your consent.</li>
                 <li>Object to the processing of your personal information.</li>
             </ul>
-            
+
             <h3>Changes to This Privacy Policy</h3>
             <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
 
@@ -309,7 +310,8 @@ class PrivacyView(View):
             'title': 'PRIVACY POLICY',
             'page_title': 'PRIVACY POLICY',
             'card': card_content
-            })
+        })
+
 
 class PayView(View):
     @staticmethod
@@ -363,7 +365,7 @@ class PayView(View):
             'title': 'PAY',
             'page_title': 'PAY',
             'card': card_content
-            })
+        })
 
 
 class GemologistView(View):
@@ -396,7 +398,8 @@ class GemologistView(View):
             'title': 'GEMOLOGIST',
             'page_title': 'GEMOLOGIST',
             'card': card_content
-            })
+        })
+
 
 class GemnameView(View):
     @staticmethod
@@ -404,24 +407,25 @@ class GemnameView(View):
         card_content = """
             <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
             """
-            # <p><strong>Some Variety Definition:</strong></p>
-            # <ul>
-            #     <li><strong>Cuprian Tourmaline:</strong> A tourmaline with a detectable presence of copper as a trace element.</li>
-            #     <li><strong>Indicolite Tourmaline:</strong> A tourmaline without detectable presence of copper as a trace element, whose color is pastel blue; blue; intense blue; vivid blue; deep blue; dark blue; neon blue; intense neon blue; vivid neon blue; pastel greenish blue; greenish blue; intense greenish blue; vivid greenish blue; or deep greenish blue.</li>
-            #     <li><strong>Cobalt Spinel:</strong> A spinel with detectable presence of cobalt as a trace element and as a chromophore.</li>
-            #     <li><strong>Ruby:</strong> A corundum colored mainly by chromium impurities. Ruby must be red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red only. Bi-color corundum whose color falls within the ruby variety may be called “Bi-color ruby & sapphire”.</li>
-            #     <li><strong>Sapphire:</strong> A corundum whose color is not red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red.</li>
-            #     <li><strong>Emerald:</strong> A beryl colored mainly by chromium and/or vanadium impurities. Emeralds must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-            #     <li><strong>Green Beryl:</strong> A beryl not colored by chromium and/or vanadium impurities. Green beryl must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
-            #     <li><strong>Tsavorite:</strong> A grossular garnet colored mainly by chromium and/or vanadium impurities. Tsavorite must be green; intense green; vivid green; deep green; or dark green.</li>
-            #     <li><strong>Demantoid:</strong> An andradite garnet colored by chromium impurities. Demantoid must be pastel green; green; intense green; vivid green; deep green; dark green; pastel yellowish green; yellowish green; intense yellowish green; vivid yellowish green; or deep yellowish/brownish green.</li>
-            # </ul>
+        # <p><strong>Some Variety Definition:</strong></p>
+        # <ul>
+        #     <li><strong>Cuprian Tourmaline:</strong> A tourmaline with a detectable presence of copper as a trace element.</li>
+        #     <li><strong>Indicolite Tourmaline:</strong> A tourmaline without detectable presence of copper as a trace element, whose color is pastel blue; blue; intense blue; vivid blue; deep blue; dark blue; neon blue; intense neon blue; vivid neon blue; pastel greenish blue; greenish blue; intense greenish blue; vivid greenish blue; or deep greenish blue.</li>
+        #     <li><strong>Cobalt Spinel:</strong> A spinel with detectable presence of cobalt as a trace element and as a chromophore.</li>
+        #     <li><strong>Ruby:</strong> A corundum colored mainly by chromium impurities. Ruby must be red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red only. Bi-color corundum whose color falls within the ruby variety may be called “Bi-color ruby & sapphire”.</li>
+        #     <li><strong>Sapphire:</strong> A corundum whose color is not red; purplish red; pinkish red; orangy red; intense red; vivid red; deep red or dark red.</li>
+        #     <li><strong>Emerald:</strong> A beryl colored mainly by chromium and/or vanadium impurities. Emeralds must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
+        #     <li><strong>Green Beryl:</strong> A beryl not colored by chromium and/or vanadium impurities. Green beryl must be light green; pastel green; green; intense green; vivid green; deep green; dark green; pastel bluish green; bluish green; intense bluish green; vivid bluish green; or deep bluish green.</li>
+        #     <li><strong>Tsavorite:</strong> A grossular garnet colored mainly by chromium and/or vanadium impurities. Tsavorite must be green; intense green; vivid green; deep green; or dark green.</li>
+        #     <li><strong>Demantoid:</strong> An andradite garnet colored by chromium impurities. Demantoid must be pastel green; green; intense green; vivid green; deep green; dark green; pastel yellowish green; yellowish green; intense yellowish green; vivid yellowish green; or deep yellowish/brownish green.</li>
+        # </ul>
 
         return render(request, 'pages/gemname.html', {
             'title': 'GEM NAME',
             'page_title': 'GEM NAME',
             'card': card_content
         })
+
 
 class SalePurchasePlanView(View):
     @staticmethod
@@ -444,6 +448,7 @@ class SalePurchasePlanView(View):
             'card': card_content
         })
 
+
 class ResultView(View):
     @staticmethod
     def get(request):
@@ -464,6 +469,7 @@ class ResultView(View):
 
         })
 
+
 class DownloadView(View):
     @staticmethod
     def get(request):
@@ -471,11 +477,12 @@ class DownloadView(View):
             'title': 'Download',
             'page_title': 'Download',
             'main_card': "<p>Our application is available for download on  <a href='https://play.google.com/store/apps/details?id=info.vygem.vygem'>Google Play</a>  as well as in the <a href='http://vygem.lemonsqueezy.com'>vygem.lemonsqueezy.com</a> service store. Initially, a free trial version is offered, allowing users to familiarize themselves with the app's features and decide whether to purchase the premium version with additional functionalities.</p>",
-               'cards': [
-                    "We are used to the fact that all files downloaded from the Internet are subject to verification for the absence of malicious code. We use the site www.virustotal.com"\
-
+            'cards': [
+                "We are used to the fact that all files downloaded from the Internet are subject to verification for the absence of malicious code. We use the site www.virustotal.com" \
+ \
                 ]
         })
+
 
 class RefundView(View):
     @staticmethod
@@ -507,13 +514,14 @@ class RefundView(View):
                                    <h2>Policy Updates</h2>
                                     <p>We reserve the right to update this refund policy at any time. Changes will be communicated to users through in-app notifications and our website.</p>
                                     <p>By implementing this refund policy, we aim to ensure customer satisfaction, build trust, and maintain a positive reputation for our VYGEM mobile application.</p>
-                                     
+
                                       """
         return render(request, 'pages/refund.html', {
             'title': 'VYGEM Refund Policy',
             'page_title': 'VYGEM Refund Policy',
             'card': card_content
-            })
+        })
+
 
 class WhoisvygemView(View):
     @staticmethod
@@ -528,14 +536,14 @@ class WhoisvygemView(View):
             </ul>
 
             <p><strong>Registration number / identity number: 67444841</strong></p>
-            
+
             <p><strong>Contact details +381 (0)61 6530083</strong></p>
-            
+
             """
 
         return render(request, 'pages/whoisvygem.html', {
             'title': 'Whoisvygem',
             'page_title': 'Who is vygem',
             'card': card_content
-            })
+        })
 
