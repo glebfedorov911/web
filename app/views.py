@@ -155,13 +155,13 @@ class ColorView(View):
     <p>When determining the color of a gemstone, be aware of these influencing factors:</p></br>
     <ul>
         <li>The color rendering of electronic device monitors varies between devices. Even different models from the same brand can display colors differently. Relying on a screen to assess color is not reliable.</li>
-        <li>Color consistency should be present throughout all parts of the <b>gem</b>. Uneven coloration can influence value.</li>
+        <li>Color consistency should be present throughout all parts of the gem. Uneven coloration can influence value.</li>
         <li>Different lighting conditions will cause a gemstone to appear differently. The type and intensity of the light source are critical.</li>
-		<li>The perceived color of <b>gemstones</b> can vary depending on your geographical location (latitude). Those closer to the equator might perceive <b>gems</b> as lighter and more vibrant, while in higher latitudes, they might seem duller. </li>
-        <li>When examining <b>gemstones</b> with trendy colors like “Pigeon Blood,” “Padparadscha,” “Royal Blue,” “Cornflower,” “Lavender,” “Teal,” “Paraiba,” “Santa Maria,” and “Muzo Green,” remember that what constitutes a “trendy” color is very subjective. These colours are often used to describe desirable hues of <b>precious</b> <b>gems</b>. Only if the color is confirmed and specified in certificates from reputable gemological laboratories should it be considered accurate.</li>
-		<li>Always be mindful of the colors and lighting in the room where you are conducting your <b>gem</b> examination. The color of the background surface where the <b>gem</b> is placed is also very important. Neutral backgrounds are recommended for color grading.</li>
+		<li>The perceived color of gemstones can vary depending on your geographical location (latitude). Those closer to the equator might perceive gems as lighter and more vibrant, while in higher latitudes, they might seem duller. </li>
+        <li>When examining gemstones with trendy colors like “Pigeon Blood,” “Padparadscha,” “Royal Blue,” “Cornflower,” “Lavender,” “Teal,” “Paraiba,” “Santa Maria,” and “Muzo Green,” remember that what constitutes a “trendy” color is very subjective. These colours are often used to describe desirable hues of precious gems. Only if the color is confirmed and specified in certificates from reputable gemological laboratories should it be considered accurate.</li>
+		<li>Always be mindful of the colors and lighting in the room where you are conducting your gem examination. The color of the background surface where the gem is placed is also very important. Neutral backgrounds are recommended for color grading.</li>
         <li>Conduct your examination only in daylight. Avoid any artificial lighting!</li>
-        <li>Take the time to study materials available online regarding this subject. Theoretical knowledge does not replace the experience of professional gemologists gained through examining a vast number of <b>gems</b>. However, it will enable you to understand a specialist's assessment and communicate effectively with them.</li>
+        <li>Take the time to study materials available online regarding this subject. Theoretical knowledge does not replace the experience of professional gemologists gained through examining a vast number of gems. However, it will enable you to understand a specialist's assessment and communicate effectively with them.</li>
     </ul>
 		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the price per carat, a professional gemological assessment is essential.</p>
 
