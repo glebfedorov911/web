@@ -389,49 +389,55 @@ class PayView(View):
     @staticmethod
     def get(request):
         card_content = """
-                Vygem is available in both free and paid versions.
+                 <h2>Vygem App Payment Options</h2>
 
-                Free Version Features:
+    <p>Vygem offers both free and paid versions, each with distinct features:</p>
 
-                Price determination for 10 different gemstones.
-                Locate gemologists on the world map.
-                View a limited version of user queries for the last 24 hours.
+    <h3>Free Version Features:</h3>
+    <ul>
+        <li>Price determination for 10 gemstones.</li>
+        <li>Global gemologist locator.</li>
+        <li>Limited access to user queries (24 hours).</li>
+    </ul>
 
-                Paid Version Features:
+    <h3>Paid Version Features:</h3>
+    <ul>
+        <li>Price determination for over 70 gemstones (expanding regularly).</li>
+        <li>Global gemologist locator.</li>
+        <li>Full access to user queries (24 hours).</li>
+    </ul>
 
-                Price determination for over 70 gemstones, with more being added over time.
-                Locate gemologists on the world map.
-                Access to a full version of user queries for the last 24 hours.
-                Subscription Cost:
+    <h3>Subscription Costs:</h3>
+    <ul>
+        <li>Monthly Subscription: $35</li>
+        <li>Annual Subscription: $350 (equivalent to $29.17 per month)</li>
+    </ul>
 
-                Monthly Subscription: $35 per month
-                Annual Subscription: $350 per year (equivalent to $29.17 per month)
+    <h3>Payment Process:</h3>
+    <p>You can subscribe to Vygem's paid version conveniently through the app itself by navigating to the "About Us" section and clicking the "PAY" button.  Alternatively, you can access the payment page via a link provided on our website.</p>
 
-                You can pay for your subscription directly in the app by going to the "About Us" section and clicking the "PAY" button. Security and transparency of payments are guaranteed by our partner, a provider of comprehensive payment infrastructure for software development companies — Lemonsqueezy.com. Lemonsqueezy.com was acquired this year by Stripe.com, one of the world leaders in online payment acceptance. This ensures safe app purchases with various payment options.
+    <h3>Secure Payments:</h3>
+    <p>Vygem utilizes the secure payment infrastructure of Lemon Squeezy (now part of Stripe), a leading global payment processor trusted by thousands of software companies.  This ensures a safe and reliable purchase experience with various payment options.  Your payment details are securely encrypted and handled by Stripe.</p>
 
-                Secure checkout powered by Lemon Squeezy
-                Lemon Squeezy is a global Merchant of Record service provider to thousands of software companies worldwide. 
-                Lemon Squeezy offers secure checkouts, payment processing, global tax compliance and other services to make
-                 compliance easy.
+    <p><strong>Security Features:</strong></p>
+    <ul>
+        <li>Secure checkout powered by Stripe (formerly Lemon Squeezy).</li>
+        <li>Encrypted data transmission.</li>
+        <li>Multiple payment methods supported.</li>
+        <li>Global tax compliance handled by Stripe.</li>
+        <li>Transaction details showing "LEMSQZY* VYGEM" (formerly) or "STRIPE*VYGEM" on your statement.</li>
+    </ul>
 
-                * Your details are secure and encrypted
+    <p>For any payment-related inquiries, please contact Stripe support directly or reach out to us at <a href="mailto:payment@vygem.info">payment@vygem.info</a>.</p>
 
-                * Backed by Stripe payments
 
-                * Multiple ways to pay
-
-                By providing Vygem the above Merchant of Record services, you will see LEMSQZY* VYGEM appear on your bank
-                or card statement for this order.
-
-                If you have any questions relating to this order, visit Lemon Squeezy support
-
-                If you prefer to pay in another way, please contact us at payment@vygem.info.
-
-                You can get the PAID version of the app for FREE:
-
-                If you make a significant contribution to the functionality and content of the app, the decision will be made by the Vygem community on social networks.
-                If 6 users purchase the paid version of our app on your behalf. This offer will remain valid for you as long as the referred users maintain their paid subscription.
-                """
+    <h3>Get the Paid Version for FREE:</h3>
+    <p>You may qualify for a free paid subscription under these conditions:</p>
+    <ul>
+        <li>Make a significant contribution to Vygem's functionality or content (as determined by the Vygem community on social media).</li>
+        <li>Refer six users who each purchase a paid subscription.  Your free subscription will continue as long as these referrals maintain their paid subscriptions.</li>
+    </ul>
+      """
 
         return render(request, 'pages/pay.html', {
             'title': 'PAY',
