@@ -228,7 +228,7 @@ class ShapeView(View):
             'title': 'Shape of gemstone',
             'page_title': 'Shape of gemstone',
             'card': '''
-                <h2>Shqpe of gemstones</h2>
+                <h2>Shape of gemstones</h2>
 
     <p>The cut of a gemstone refers to its shape and the arrangement of its facets. It's a crucial factor in how light interacts with the gem, influencing its brilliance, fire, and overall appearance.</p>
 
