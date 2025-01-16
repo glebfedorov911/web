@@ -30,6 +30,7 @@ a {
 article.main-f-block {
     gap: 40px;
     align-items: center;
+    border: 2px solid blue; /* Добавляем рамку */
 }
 
 article.main-f-block > div.img {
