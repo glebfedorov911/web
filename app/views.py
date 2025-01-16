@@ -26,7 +26,7 @@ class CaratView(View):
         <li>For rare and highly sought-after gemstones, the price per carat increases progressively with increasing weight.</li>
         <li>For gemstones that are abundant on the market, with ample raw material available for larger cuts, the price per carat increases gradually and by a smaller amount (sometimes the price per carat can be nearly identical for gemstones of any weight).</li>
         <li>If you have a gemstone that is unusually heavy for its type, a dilemma arises. The value of the gemstone increases progressively with weight, but once a certain price point is reached, the gemstone might lose market interest due to its significantly increased price. Therefore, you may find the gemstone undervalued in our assessment. Selling it at a higher price can become a significant challenge. However, it is worth trying, as anything is possible.</li>
-        <li>A gemstone becomes interesting for investment purposes after a certain weight threshold. For very expensive gemstones, this is  1 carat, and for expensive gemstones, it is from around 3 carats.</li>
+        <li>A gemstone becomes interesting for investment purposes after a certain weight threshold. For very expensive gemstones, this is  1 carat, and for expensive gemstones, it is from 3 carats.</li>
          <li>Gemstones weighing more than 50 carats are difficult to utilize within the jewelry industry. Such stones are of greater interest to collectors.</li>
     </ul>
             '''
