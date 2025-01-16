@@ -102,7 +102,7 @@ class TransparencyView(View):
 class ColorView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/color.html', {
+        return render(request, 'pages/color_of_gemstones.html', {
             'title': 'Color gemstones',
             'page_title': 'COLOR GEMSTONES',
             'card': '''

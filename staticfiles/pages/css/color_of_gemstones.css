@@ -1,11 +1,11 @@
-section.color__content {
+section.color_of_gemstones__content {
     width: 100%;
     justify-content: sapce-between;
     aling-items: center;
     gap: 40px;
 }
 
-section.carat__content > figure {
+section.color_of_gemstones__content > figure {
     width: 191.42px;
     height: 411px;
 
@@ -13,7 +13,7 @@ section.carat__content > figure {
 }
 
 @media screen and (max-width: 768px) { 
-    section.carat__content {
+    section.color_of_gemstones__content {
         flex-wrap: wrap;
     }
 }
