@@ -30,12 +30,10 @@ a {
 article.main-f-block {
     gap: 40px;
     align-items: center;
-
 }
 
 article.main-f-block > div.img {
     gap: 30px;
-
 }
 
 article > figure {
