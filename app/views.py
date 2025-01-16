@@ -59,8 +59,7 @@ class CutView(View):
     <p>Ideal cut. In this type of faceting, light entering the gemstone is internally reflected by the pavilion facets and exits through the crown. The result is a brilliant, ‘live’ gemstone.</p>
     <br>
     <p><b>Examples:</b>
-    <br>
-     <p>The effect of proper proportions on light movement: a comparison between a well-cut gemstone and stones with either inadequate or excessive depth (height).</p>
+    <p>The effect of proper proportions on light movement: a comparison between a well-cut gemstone and stones with either inadequate or excessive depth (height).</p>
      <img src="/static/pages/img/cut-diamond-small-1.png" alt="exelent cut gemstone"> <img src="/static/pages/img/cut-diamond-small-2.png" alt="good cut gemstone"> <img src="/static/pages/img/cut-diamond-small-3.png" alt="poor cut gemstone">
                
 	<p> It’s important to examine both the proportions and the craftsmanship of the cut to fully understand its impact on the overall appearance of the gem. <b>Many rare and precious gems are often cut poorly in an attempt to retain as much weight as possible. This can diminish the gem's brilliance and perfection, which often compromises the inherent beauty of the gemstone in favor of maximizing the price per carat.</b></p>
