@@ -16,9 +16,20 @@ class CaratView(View):
         return render(request, 'pages/carat.html', {
             'title': 'Carat',
             'page_title': 'CARAT',
-            'card': '<b>The weight of the stone is an important characteristic when determining its value.</b> \
-                     <p> If you have a gemstone that is very heavy for its type, the following dilemma arises.The value of the gemstone increases in mathematical progression as the weight of the stone increases.However, once a certain price is reached, the gemstone may no longer be of interest due to its significantly increased price.Therefore, you may find that the gemstone is undervalued in our application.Selling it at a higher price may be a serious problem.However, it is worth trying, as everything is possible.</p>'
+            'card': '''
+                <h2>Gemstone Weight</h2>
 
+    <p>Gemstone weight is a crucial characteristic when determining its value.</p>
+
+    <h3>How Weight Affects a Gemstone's Value:</h3>
+    <ul>
+        <li>For rare and highly sought-after gemstones, the price per carat increases progressively with increasing weight.</li>
+        <li>For gemstones that are abundant on the market, with ample raw material available for larger cuts, the price per carat increases gradually and by a smaller amount (sometimes the price per carat can be nearly identical for gemstones of any weight).</li>
+        <li>If you have a gemstone that is unusually heavy for its type, a dilemma arises. The value of the gemstone increases progressively with weight, but once a certain price point is reached, the gemstone might lose market interest due to its significantly increased price. Therefore, you may find the gemstone undervalued in our assessment. Selling it at a higher price can become a significant challenge. However, it is worth trying, as anything is possible.</li>
+        <li>A gemstone becomes interesting for investment purposes after a certain weight threshold. For very expensive gemstones, this is  1 carat, and for expensive gemstones, it is from around 3 carats.</li>
+         <li>Gemstones weighing more than 50 carats are difficult to utilize within the jewelry industry. Such stones are of greater interest to collectors.</li>
+    </ul>
+            '''
             # 'list': [
             #     'Afghanite',
             #     'Aquamarine 0.2 - 50 ct',
