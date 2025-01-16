@@ -8,7 +8,7 @@
         {% endwith %}
         <figure><img src="{% static '/pages/img/cut.png' %}" alt=""></figure>
     </section>
-    
+
     <section class="flex flex-col card-list">
         {% for card in cards %}
         {% include "../components/card.html" with card_content=card %}
