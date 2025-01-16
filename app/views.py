@@ -55,6 +55,8 @@ class CutView(View):
        <li><b>Ideal Height Proportions:</b> The height of the <gem should ideally be approximately 70% of its diameter or width. These proportions are generally considered ideal for optimum light performance**.</li>
         <li><b>Chips and Damage:</b> Look for any chips, especially those that reach the surface (especially on the face-up side of the gem). Surface-reaching chips can dramatically decrease a gem's value and durability.</li>
     </ul>
+    <img src="{% static '/pages/img/cut-diamond-1.png' %}" alt="cut gem">
+    <p>Ideal cut. In this type of faceting, light entering the gemstone is internally reflected by the pavilion facets and exits through the crown. The result is a brilliant, ‘live’ gemstone.</p>
 	<p> It’s important to examine both the proportions and the craftsmanship of the cut to fully understand its impact on the overall appearance of the gem. <b>Many rare and precious gems are often cut poorly in an attempt to retain as much weight as possible. This can diminish the gem's brilliance and perfection, which often compromises the inherent beauty of the gemstone in favor of maximizing the price per carat.</b></p>
 
     <h2>The Sad Reality</h2>
