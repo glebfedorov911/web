@@ -91,12 +91,26 @@ class CutView(View):
 class TransparencyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/transparency.html', {
-            'title': 'Transparency',
-            'page_title': 'TRANSPARENCY',
-            'card': 'Transparency is understood as the ability of a solid substance to allow light rays to pass through to some degree. The transparency depends on the structure of the crystals, the presence of cracks, solid and gas-liquid inclusions, which hinder the passage of light through the stone. Transparency is visually determined by viewing the stone in transmitted light. Gemstones are classified by their transparency level as follows: \
-                <ul><li>Transparent: all colorless and lightly colored gemstones, through which objects are clearly visible when viewed;</li><li>Translucent: gemstones through which objects are somewhat visible but not clearly;</li><li>Opaque: gemstones through which no light passes through.</li></ul> \
-                The degree of transparency, namely the values of the transparency coefficient and the absorption coefficient, can be determined quantitatively using spectrophotometers.'})
+        return render(request, 'pages/transparency_of_gemstone.html', {
+            'title': 'Transparency of gemstones',
+            'page_title': 'TRANSPARENCY OF GEMSTONES',
+            'card': '''
+             <h2>Gemstone Transparency</h2>
+
+    <p>Transparency refers to the extent to which light can pass through a gemstone. It's a key factor affecting a gem's appearance and, to a degree, its value. Gemstones are generally categorized into three main transparency types:</p>
+
+    <h3>Transparency Categories:</h3>
+    <ul>
+        <li><strong>Transparent:</strong> A transparent gemstone allows light to pass through it clearly, enabling you to see objects through the stone. These gems often exhibit high brilliance and fire. Examples include diamonds, sapphires, and topaz.</li>
+        <li><strong>Translucent:</strong> A translucent gemstone allows some light to pass through, but it diffuses the light, so you cannot see objects clearly through the stone. Light appears to glow within the gem. Examples include jade, chalcedony, and some opals.</li>
+        <li><strong>Opaque:</strong> An opaque gemstone does not allow any light to pass through. These gems do not have the sparkle of transparent stones, but their color, patterns, and surface luster often make them highly desirable. Examples include turquoise, lapis lazuli, and malachite.</li>
+    </ul>
+
+    <p>Understanding the transparency of a gemstone is important for accurate identification and valuation. Each transparency type can be beautiful in its own way and suitable for different types of jewelry designs.</p>
+
+
+            '''
+        })
 
 
 class ColorView(View):
