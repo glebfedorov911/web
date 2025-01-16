@@ -224,10 +224,32 @@ class BrilliancyView(View):
 class ShapeView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/shape.html', {
-            'title': 'SHAPE',
-            'page_title': 'SHAPE',
-            'card': "<p>The cost may vary slightly based on selecting the preferred cut for the particular precious gemstone</p>",
+        return render(request, 'pages/shape_of_gemstone.html', {
+            'title': 'Shape of gemstone',
+            'page_title': 'Shape of gemstone',
+            'card': '''
+                <h2>Shqpe of gemstones</h2>
+
+    <p>The cut of a gemstone refers to its shape and the arrangement of its facets. It's a crucial factor in how light interacts with the gem, influencing its brilliance, fire, and overall appearance.</p>
+
+    <h3>Common Gemstone Cuts:</h3>
+    <ul>
+        <li><strong>Round Brilliant:</strong> The most popular cut, designed to maximize brilliance.</li>
+        <li><strong>Oval:</strong> A versatile and elegant cut often used in rings.</li>
+        <li><strong>Pear (Teardrop):</strong> A classic cut, often used in pendants and earrings.</li>
+        <li><strong>Emerald (Step) Cut:</strong> Characterized by its rectangular shape and stepped facets, emphasizing clarity.</li>
+        <li><strong>Cushion Cut:</strong> A popular antique cut with rounded corners, known for its soft look.</li>
+        <li><strong>Princess Cut:</strong> A square cut with many facets, known for its brilliance.</li>
+        <li><strong>Marquise (Navette):</strong> An elongated, boat-shaped cut.</li>
+        <li><strong>Heart Cut:</strong> A romantic and symbolic cut.</li>
+        <li><strong>Trillion (Triangle) Cut:</strong> A triangular cut with variations, often used as side stones.</li>
+        <li><strong>Cabochon:</strong> A polished, non-faceted cut, often used for opaque or translucent gems.</li>
+        <li><strong>Fancy Cuts:</strong> A broad category encompassing various unique and creative shapes.</li>
+    </ul>
+
+    <p>While the cut significantly affects the appearance of a gemstone, it typically has a relatively minor impact on its overall value compared to factors such as color, clarity, and carat weight.
+     However, the quality of the cut (proportions, polish, symmetry) is important and can affect value within a particular cut style.</p>
+            '''
         })
 
 
