@@ -35,7 +35,7 @@ article.main-f-block {
 
 article.main-f-block > div.img {
     gap: 30px;
-    border: 2px solid blue; /* Добавляем рамку */
+    
 }
 
 article > figure {
