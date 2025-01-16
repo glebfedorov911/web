@@ -108,18 +108,21 @@ class ColorView(View):
             'card': '''
             <h2>Analyzing Gemstones: A Color-Based Approach</h2>
 
-    <p>Colo r is a crucial characteristic when evaluating any <b>gemstone</b>. 
-    Our team has developed a unique method for assessing <b>gem</b> color using advanced computer and spectral color analysis techniques. 
+    <p>Color is a crucial characteristic when evaluating any gemstone. 
+    Our team has developed a unique method for assessing gem color using advanced computer and spectral color analysis techniques. 
     The core of our methodology lies in determining the percentage of the dominant hue.
     Based on this data, we propose a color gradation coefficient.</p>
 
     <h2>Gem Color Grading Methodology</h2>
 
-    <p>Our application employs the following approach for establishing <b>gemstone</b> value based on color. 
-    We utilize 32 primary hues as defined by the GIA. For each of these hues, we have constructed a "plane". On this plane, the x-axis represents "Saturation" – defining how pure and neutral the <b>stone's</b> color is. The y-axis represents "Brightness," describing the color's intensity, from light to dark. Each coordinate point within our color table signifies a specific percentage of the base hue.
+    <p>Our application employs the following approach for establishing gemstone value based on color. 
+    We utilize 32 primary hues as defined by the GIA. For each of these hues, we have constructed a "plane".
+     On this plane, the x-axis represents "Saturation" – defining how pure and neutral the stone's color is.
+      The y-axis represents "Brightness," describing the color's intensity, from light to dark. 
+      Each coordinate point within our color table signifies a specific percentage of the base hue.
     For example, in the "R (Red)" hue, point 1/1 might represent almost 100% red. Whereas point 2/4 might represent approximately 72% red. 
-    Consequently, a <b>gem</b> with a color matching point 2/4 would have a value that is 0.72 times the value of a <b>gem</b> at point 1/1.
-    However, this is not universal. Once the base color percentage falls below 50% and the base color begins to "fade," we apply an additional discount to the <b>price per carat</b> of the <b>stone</b>.</p>
+    Consequently, a gem with a color matching point 2/4 would have a value that is 0.72 times the value of a gem at point 1/1.
+    However, this is not universal. Once the base color percentage falls below 50% and the base color begins to "fade," we apply an additional discount to the price per carat of the stone.</p>
 
     <p>For example:</p>
     <ul>
@@ -128,35 +131,39 @@ class ColorView(View):
          <li>Moderately Strong/Medium Light (4/4) would have a coefficient of 0.65.</li>
     </ul>
 	<h2> Gemstone Color Examples and Price Trends</h2>
-	<p>This method is applicable to various <b>precious</b> and non-precious <b>stones</b>, such as <b>ruby</b>, <b>emerald</b>, and <b>sapphire</b>, whether they are <b>faceted</b> or cabochon. These color coefficients affect the <b>price per carat</b> of the <b>gem</b>. The color is only one aspect of quality of the <b>gems</b> and further quality analysis is recommended. Our system allows tracking <b>price trends</b> based on color grading.</p>
+	<p>This method is applicable to various precious and non-precious stones, such as ruby, emerald, and sapphire, whether they are faceted or cabochon. 
+	These color coefficients affect the price per carat of the gem. 
+	The color is only one aspect of quality of the gems and further quality analysis is recommended. 
+	Our system allows tracking price trends based on color grading.</p>
 
     <p>The red hue color table below illustrates the points of intersection between VYGEM's color methodology and GIA's color grading system.</p>
     <img src = "/static/pages/img/color3.png" alt="gemstones gemstone gem">
 	   <h3>Visual Color Assessment of Gemstones</h3>
 
-    <p>Accurately assessing the color of a <b>gem</b> is a crucial step in evaluating its quality and value. Here’s a guide on how to visually assess <b>gemstone</b> color:</p>
+    <p>Accurately assessing the color of a gem is a crucial step in evaluating its quality and value.
+     Here’s a guide on how to visually assess gemstone color:</p>
 
     <h2>How to Visually Determine Gem Color</h2>
     <ul>
          <li>Observe the <b>gem</b> from a distance of 20-40 cm from your eyes. 
          View it from all sides and at various angles.
-         The <b>gem</b> should not be held in a static position while assessing its color.</li>
+         The gem should not be held in a static position while assessing its color.</li>
 	</ul>
 
 	<h2>Factors Affecting Gemstone Color Perception</h2>
 
-    <p>When determining the color of a <b>gemstone</b>, be aware of these influencing factors:</p></br>
+    <p>When determining the color of a gemstone, be aware of these influencing factors:</p></br>
     <ul>
         <li>The color rendering of electronic device monitors varies between devices. Even different models from the same brand can display colors differently. Relying on a screen to assess color is not reliable.</li>
         <li>Color consistency should be present throughout all parts of the <b>gem</b>. Uneven coloration can influence value.</li>
-        <li>Different lighting conditions will cause a <b>gemstone</b> to appear differently. The type and intensity of the light source are critical.</li>
+        <li>Different lighting conditions will cause a gemstone to appear differently. The type and intensity of the light source are critical.</li>
 		<li>The perceived color of <b>gemstones</b> can vary depending on your geographical location (latitude). Those closer to the equator might perceive <b>gems</b> as lighter and more vibrant, while in higher latitudes, they might seem duller. </li>
         <li>When examining <b>gemstones</b> with trendy colors like “Pigeon Blood,” “Padparadscha,” “Royal Blue,” “Cornflower,” “Lavender,” “Teal,” “Paraiba,” “Santa Maria,” and “Muzo Green,” remember that what constitutes a “trendy” color is very subjective. These colours are often used to describe desirable hues of <b>precious</b> <b>gems</b>. Only if the color is confirmed and specified in certificates from reputable gemological laboratories should it be considered accurate.</li>
 		<li>Always be mindful of the colors and lighting in the room where you are conducting your <b>gem</b> examination. The color of the background surface where the <b>gem</b> is placed is also very important. Neutral backgrounds are recommended for color grading.</li>
         <li>Conduct your examination only in daylight. Avoid any artificial lighting!</li>
         <li>Take the time to study materials available online regarding this subject. Theoretical knowledge does not replace the experience of professional gemologists gained through examining a vast number of <b>gems</b>. However, it will enable you to understand a specialist's assessment and communicate effectively with them.</li>
     </ul>
-		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the <b>price per carat</b>, a professional gemological assessment is essential.</p>
+		 <p>Remember, while visual assessment is a valuable initial step, for accurate color grading and determination of the price per carat, a professional gemological assessment is essential.</p>
 
 
                             '''
