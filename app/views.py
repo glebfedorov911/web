@@ -203,10 +203,21 @@ class ClarityView(View):
 class BrilliancyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/brilliancy.html', {
-            'title': 'BRILLIANCY',
-            'page_title': 'BRILLIANCY',
-            'card': "<p> Evaluating Brilliance and Neon Glow of the Precious Gemstone.</br> Fluorescence is a glow around the stone. Some stones from one deposit have a glow, while others do not. The difference in price is significant.</p>",
+        return render(request, 'pages/brilliancy_of_gemstones.html', {
+            'title': 'BRILLIANCY OF GEMSTONES',
+            'page_title': 'BRILLIANCY OF GEMSTONES',
+            'card': '''
+                <h2>Brilliancy gemstones</h2>
+
+    <p>An assessment of a gemstone's brilliance and any neon-like luminescence.</p>
+
+    <p>Brilliance and fluorescence are key characteristics that captivate gemstone enthusiasts. The desire to own a gemstone often arises primarily from its "play of light," while considerations of cost and potential imperfections become secondary. We consider these characteristics as important as color in gemstones.</p>
+
+    <p>Fluorescence is the luminescence within and around the gem.</p>
+
+    <p>Brilliance is not only a gem's "shine" but also involves dispersion and other physical properties of gemstones.</p>
+
+            '''
         })
 
 

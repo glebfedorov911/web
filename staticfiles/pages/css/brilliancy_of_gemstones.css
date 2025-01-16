@@ -1,4 +1,4 @@
-section.brilliancy__content {
+section.brilliancy_of_gemstones__content {
     width: 100%;
     justify-content: sapce-between;
     aling-items: center;
@@ -6,8 +6,8 @@ section.brilliancy__content {
 }
 
 
-section.brilliancy__content > article.card,
-section.brilliancy__content > article.card > ul > li {
+section.brilliancy_of_gemstones__content > article.card,
+section.brilliancy_of_gemstones__content > article.card > ul > li {
     font-size: 22px;
 }
 
