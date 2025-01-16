@@ -43,7 +43,7 @@ class CutView(View):
             'main_card': '''
                 <h1>Assessing  the Cut of Gemstones</h1>
 
-    <p>The cut of a <b>gemstone</b> is a critical factor that greatly influences its brilliance, fire, and overall beauty. A well-cut <b>gem</b> will maximize light return, enhancing its visual appeal. When evaluating the cut of a <b>gem</b>, pay close attention to the following:</p>
+    <p>The cut of a gemstone is a critical factor that greatly influences its brilliance, fire, and overall beauty. A well-cut <b>gem</b> will maximize light return, enhancing its visual appeal. When evaluating the cut of a <b>gem</b>, pay close attention to the following:</p>
 
     <h2>Key Aspects of Gem Cut Evaluation</h2>
     <ul>
