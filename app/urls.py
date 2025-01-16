@@ -3,7 +3,7 @@ from .views import *
 
 urlpatterns = [
     path('', MainView.as_view(), name='main'),
-    path('carat/', CaratView.as_view(), name='carat'),
+    path('price_per_carat/', CaratView.as_view(), name='price_per_carat'),
     path('color/', ColorView.as_view(), name='color'),
     path('transparency/', TransparencyView.as_view(), name='transparency'),
     path('cut-gemstones/', CutView.as_view(), name='cut-gemstones'),
