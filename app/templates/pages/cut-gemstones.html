@@ -8,25 +8,7 @@
         {% endwith %}
         <figure><img src="{% static '/pages/img/cut.png' %}" alt=""></figure>
     </section>
-    <section class="flex imgs-block">
-        <div class="flex flex-col diamond-container">
-            <div class="flex flex-col">
-                <b>Examples</b>
-                <p>movement of light inside a perfectly cut stone, a stone with insufficient and excessive height</p>
-            </div>
-            <div class="flex justify-between align-items">
-                <figure class="small-diamond">
-                    <img src="{% static '/pages/img/cut-diamond-small-1.png' %}" alt="">
-                </figure>
-                <figure class="small-diamond">
-                    <img src="{% static '/pages/img/cut-diamond-small-2.png' %}" alt="">
-                </figure>
-                <figure class="small-diamond">
-                    <img src="{% static '/pages/img/cut-diamond-small-3.png' %}" alt="">
-                </figure>
-            </div>
-        </div>
-    </section>
+    
     <section class="flex flex-col card-list">
         {% for card in cards %}
         {% include "../components/card.html" with card_content=card %}
