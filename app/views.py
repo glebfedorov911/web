@@ -48,7 +48,7 @@ class FreeVygemView(View):
 class CutView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/cut-gemstones.html', {
+        return render(request, 'pages/cut_gemstones.html', {
             'title': 'Cut gemstomes',
             'page_title': 'Cut gemstones',
             'main_card': '''
@@ -91,7 +91,7 @@ class CutView(View):
 class TransparencyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/transparency_of_gemstone.html', {
+        return render(request, 'pages/transparency_gemstone.html', {
             'title': 'Transparency of gemstones',
             'page_title': 'TRANSPARENCY OF GEMSTONES',
             'card': '''
@@ -116,7 +116,7 @@ class TransparencyView(View):
 class ColorView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/color_of_gemstones.html', {
+        return render(request, 'pages/color_gemstones.html', {
             'title': 'Color gemstones',
             'page_title': 'COLOR GEMSTONES',
             'card': '''
@@ -187,7 +187,7 @@ class ColorView(View):
 class ClarityView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/clarity_of_gems.html', {
+        return render(request, 'pages/clarity_gems.html', {
             'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY GEMSTONES',
             'card': '''
@@ -217,7 +217,7 @@ class ClarityView(View):
 class BrilliancyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/brilliancy_of_gemstones.html', {
+        return render(request, 'pages/brilliancy_gemstones.html', {
             'title': 'BRILLIANCY OF GEMSTONES',
             'page_title': 'BRILLIANCY OF GEMSTONES',
             'card': '''
@@ -238,7 +238,7 @@ class BrilliancyView(View):
 class ShapeView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/shape_of_gemstone.html', {
+        return render(request, 'pages/shape_gemstone.html', {
             'title': 'Shape of gemstone',
             'page_title': 'Shape of gemstone',
             'card': '''

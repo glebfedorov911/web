@@ -1,5 +1,13 @@
 @import '../../app/css/variables.css';
 
+a:hover {
+    color: red; /* Цвет ссылки при наведении */
+}
+a {
+  color: darkred; /* Цвет ссылки */
+  text-decoration-color: none; /* Цвет подчеркивания */
+}
+
 h1 {
     text-align: end;
 }
@@ -76,47 +84,122 @@ section {
 }
 
 article.splines-block {
-    grid-template-columns: 1fr 1fr 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 5px;
+    font-family: Montserrat, sans-serif; /* Устанавливаем шрифт для всех дочерних элементов */
+    font-size: 20px; /* устанавливаем размер шрифта для всех */
 }
 
 article.splines-block > figure {
-    grid-column: 3/4;
-    grid-row: 1/10;
+    grid-column: 3/6;
+    grid-row: 1/4;
 }
+
+/* Размещаем 10 точек */
 
 article.splines-block > #first-point {
-    grid-column: 1/1;
+    grid-column: 1/2;
     grid-row: 1/2;
+    display: flex;
+}
+article.splines-block > #first-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+article.splines-block > #second-point {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+}
+article.splines-block > #second-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
 }
 
-article.splines-block > .second-point {
-    grid-column: 2/2;
-    grid-row: 3/4;
+article.splines-block > #third-point {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+}
+article.splines-block > #third-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
 }
 
-article.splines-block > .third-point {
-    grid-column: 1/1;
-    grid-row: 5/6;
-    margin-left: 50px;
+article.splines-block > #fourth-point {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+}
+article.splines-block > #fourth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
 }
 
-article.splines-block > .fourth-point {
-    grid-column: 2/2;
-    grid-row: 7/8;
+article.splines-block > #fifth-point {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    display: flex;
+}
+article.splines-block > #fifth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
 }
 
-article.splines-block > .fifth-point {
-    grid-column: 1/1;
-    grid-row: 10/11;
-
-    padding-left: 200px;
+article.splines-block > #sixth-point {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
 }
+article.splines-block > #sixth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+
+article.splines-block > #seventh-point {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+}
+article.splines-block > #seventh-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+
+article.splines-block > #eighth-point {
+    grid-column: 3/4;
+    grid-row:    2/3;
+    display: flex;
+}
+article.splines-block > #eighth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+
+article.splines-block > #ninth-point {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+}
+article.splines-block > #ninth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+
+article.splines-block > #tenth-point {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    display: flex;
+}
+article.splines-block > #tenth-point img {
+    /* Добавьте стили для картинки, если нужно */
+    margin-left: 20px; /* Отступ между текстом и картинкой */
+}
+
 
 figure.spline {
-    top: 0;
-    left: 0;
-    
     width: 100%;
     height: 100%;
 }

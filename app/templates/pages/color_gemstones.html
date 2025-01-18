@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <section class="flex color__content">
+    <section class="flex color_gemstones__content">
         {% with card|safe as content %}
             {% include "../components/card.html" with card_content=content %}
         {% endwith %}
@@ -84,7 +84,7 @@
 <!--    </p>-->
 <!--    <br>-->
 
-    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/color_of_gemstones.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/color_gemstones.css' %}" />
     <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
 
 {% endblock %}
