@@ -2,6 +2,14 @@
 
 
 
+a:hover {
+    color: red; /* Цвет ссылки при наведении */
+}
+a {
+  color: darkred; /* Цвет ссылки */
+  text-decoration-color: darkred; /* Цвет подчеркивания */
+}
+
 h1 {
     text-align: end;
 }
