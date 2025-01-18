@@ -1,5 +1,6 @@
 @import '../../app/css/variables.css';
 
+
 a:hover {
     color: red; /* Цвет ссылки при наведении */
 }
@@ -20,6 +21,14 @@ h3 {
     font-size: 32px;
 }
 
+ul {
+    list-style-image: url('/static/pages/img/ul-arrow.svg');
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
 
 article.main-f-block {
     gap: 40px;
@@ -43,7 +52,7 @@ path.red {
 
 .red {
     color: var(--dark-red);
-} 
+}
 
 section {
     position: relative;
@@ -60,7 +69,7 @@ section {
 }
 
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
     article.main-f-block {
         flex-wrap: wrap-reverse;
         justify-content: center;
