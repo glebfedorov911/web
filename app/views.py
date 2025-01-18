@@ -13,7 +13,7 @@ class MainView(View):
 class CaratView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/price_per_carat.html', {
+        return render(request, 'pages/price_per_carat.html', {
             'title': 'Price per carat',
             'page_title': 'Price per carat',
             'card': '''
@@ -42,13 +42,13 @@ class CaratView(View):
 class FreeVygemView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/free-vygem.html', {'title': 'Vygem', 'page_title': ''})
+        return render(request, 'pages/free-vygem.html', {'title': 'Vygem', 'page_title': ''})
 
 
 class CutView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/cut_gem.html', {
+        return render(request, 'pages/cut_gem.html', {
             'title': 'Cut gemstomes',
             'page_title': 'Cut gemstones',
             'main_card': '''
@@ -91,7 +91,7 @@ class CutView(View):
 class TransparencyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/transparency_gem.html', {
+        return render(request, 'pages/transparency_gem.html', {
             'title': 'Transparency of gemstones',
             'page_title': 'TRANSPARENCY OF GEMSTONES',
             'card': '''
@@ -116,7 +116,7 @@ class TransparencyView(View):
 class ColorView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/color_gem.html', {
+        return render(request, 'pages/color_gem.html', {
             'title': 'Color gemstones',
             'page_title': 'COLOR GEMSTONES',
             'card': '''
@@ -187,7 +187,7 @@ class ColorView(View):
 class ClarityView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/clarity_gem.html', {
+        return render(request, 'pages/clarity_gem.html', {
             'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY GEMSTONES',
             'card': '''
@@ -217,7 +217,7 @@ class ClarityView(View):
 class BrilliancyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/brilliancy_gem.html', {
+        return render(request, 'pages/brilliancy_gem.html', {
             'title': 'BRILLIANCY OF GEMSTONES',
             'page_title': 'BRILLIANCY OF GEMSTONES',
             'card': '''
@@ -238,7 +238,7 @@ class BrilliancyView(View):
 class ShapeView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/shape_gem.html', {
+        return render(request, 'pages/shape_gem.html', {
             'title': 'Shape of gemstone',
             'page_title': 'Shape of gemstone',
             'card': '''
@@ -270,7 +270,7 @@ class ShapeView(View):
 class ValuenotpriceView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/valuenotprice.html', {
+        return render(request, 'pages/valuenotprice.html', {
             'title': 'VALUE NOT PRICE',
             'page_title': 'VALUE NOT PRICE',
             'card': """<p>In the market, you can encounter precious gemstones with prices that can vary significantly from the cost offered by VYGEM, both higher and lower.</p>
@@ -319,7 +319,7 @@ class TermsView(View):
             <p><strong>9. Conclusion</strong><br>
             By using our Application, you confirm that you have read these Terms and agree to them.</p>
             """
-        return render(request, 'page/terms.html', {
+        return render(request, 'pages/terms.html', {
             'title': 'TERMS AND CONDITIONS',
             'page_title': 'TERMS AND CONDITIONS',
             'card': card_content
@@ -378,7 +378,7 @@ class PrivacyView(View):
 <p>If you have any questions about this Privacy Policy, please contact us:</p>
 <p>Email: <a href="mailto:privacy@example.com">privacy@vygem.info</a></p>
             """
-        return render(request, 'page/privacy.html', {
+        return render(request, 'pages/privacy.html', {
             'title': 'PRIVACY POLICY',
             'page_title': 'PRIVACY POLICY',
             'card': card_content
@@ -439,7 +439,7 @@ class PayView(View):
     </ul>
       """
 
-        return render(request, 'page/pay.html', {
+        return render(request, 'pages/pay.html', {
             'title': 'PAY',
             'page_title': 'PAY',
             'card': card_content
@@ -472,7 +472,7 @@ class GemologistView(View):
             </ul>
             """
 
-        return render(request, 'page/gemologist.html', {
+        return render(request, 'pages/gemologist.html', {
             'title': 'GEMOLOGIST',
             'page_title': 'GEMOLOGIST',
             'card': card_content
@@ -518,7 +518,7 @@ class SalePurchasePlanView(View):
 class ResultView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/result.html', {
+        return render(request, 'pages/result.html', {
             'title': 'Result',
             'page_title': 'Result',
             'main_card': """<p>Upon receiving the stone valuation, suppress your emotions. This is crucial.</p>
@@ -539,7 +539,7 @@ class ResultView(View):
 class DownloadView(View):
     @staticmethod
     def get(request):
-        return render(request, 'page/download.html', {
+        return render(request, 'pages/download.html', {
             'title': 'Download',
             'page_title': 'Download',
             'main_card': "<p>Our application is available for download on  <a href='https://play.google.com/store/apps/details?id=info.vygem.vygem'>Google Play</a>  as well as in the <a href='http://vygem.lemonsqueezy.com'>vygem.lemonsqueezy.com</a> service store. Initially, a free trial version is offered, allowing users to familiarize themselves with the app's features and decide whether to purchase the premium version with additional functionalities.</p>",
@@ -582,7 +582,7 @@ class RefundView(View):
                                     <p>By implementing this refund policy, we aim to ensure customer satisfaction, build trust, and maintain a positive reputation for our VYGEM mobile application.</p>
 
                                       """
-        return render(request, 'page/refund.html', {
+        return render(request, 'pages/refund.html', {
             'title': 'VYGEM Refund Policy',
             'page_title': 'VYGEM Refund Policy',
             'card': card_content
@@ -607,7 +607,7 @@ class WhoisvygemView(View):
 
             """
 
-        return render(request, 'page/whoisvygem.html', {
+        return render(request, 'pages/whoisvygem.html', {
             'title': 'Whoisvygem',
             'page_title': 'Who is vygem',
             'card': card_content
