@@ -88,7 +88,7 @@ article.splines-block {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     font-family: Montserrat, sans-serif; /* Устанавливаем шрифт для всех дочерних элементов */
     font-size: 20px; /* устанавливаем размер шрифта для всех */
 }
