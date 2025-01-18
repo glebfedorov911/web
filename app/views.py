@@ -486,7 +486,7 @@ class GemnameView(View):
             <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
             """
 
-        return render(request, 'page/name_gem.html', {
+        return render(request, 'pages/name_gem.html', {
             'title': 'GEM NAME',
             'page_title': 'GEM NAME',
             'card': card_content
