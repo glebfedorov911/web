@@ -1,13 +1,6 @@
 @import '../../app/css/variables.css';
 
 
-a:hover {
-    color: red; /* Цвет ссылки при наведении */
-}
-a {
-  color: darkred; /* Цвет ссылки */
-  text-decoration-color: none; /* Цвет подчеркивания */
-}
 
 h1 {
     text-align: end;
@@ -21,6 +14,20 @@ h3 {
     font-size: 32px;
 }
 
+ul {
+    list-style-image: url('/static/pages/img/ul-arrow.svg');
+}
+
+<!-- li > a {
+
+    text-decoration-color: red;
+    color: red;
+}
+-->
+
+a {
+  text-decoration-color: red;
+}
 
 article.main-f-block {
     gap: 40px;
@@ -74,7 +81,7 @@ article.splines-block {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     font-family: Montserrat, sans-serif; /* Устанавливаем шрифт для всех дочерних элементов */
     font-size: 20px; /* устанавливаем размер шрифта для всех */
 }
