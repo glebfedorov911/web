@@ -1,5 +1,14 @@
 @import '../../app/css/variables.css';
 
+
+a:hover {
+    color: red; /* Цвет ссылки при наведении */
+}
+a {
+  color: darkred; /* Цвет ссылки */
+  text-decoration-color: none; /* Цвет подчеркивания */
+}
+
 h1 {
     text-align: end;
 }
