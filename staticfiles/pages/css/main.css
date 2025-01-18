@@ -21,20 +21,7 @@ h3 {
     font-size: 32px;
 }
 
-ul {
-    list-style-image: url('/static/pages/img/ul-arrow.svg');
-}
 
-<!-- li > a {
-
-    text-decoration-color: red;
-    color: red;
-}
--->
-
-a {
-  text-decoration-color: red;
-}
 
 article.main-f-block {
     gap: 40px;
