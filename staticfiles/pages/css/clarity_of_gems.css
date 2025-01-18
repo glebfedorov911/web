@@ -3,7 +3,7 @@ section.clarity_of_gems__content {
     gap: 40px;
 }
 
-section.clarity_gems__content > figure {
+section.clarity_of_gems__content > figure {
     width: 191.42px;
     height: 411px;
 
@@ -11,7 +11,7 @@ section.clarity_gems__content > figure {
 }
 
 @media screen and (max-width: 768px) { 
-    section.clarity_gems__content {
+    section.clarity_of_gems__content {
         flex-wrap: wrap;
     }
 }

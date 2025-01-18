@@ -1,4 +1,4 @@
-section.shape_gemstone__content {
+section.shape_of_gemstone__content {
     width: 100%;
     justify-content: sapce-between;
     aling-items: center;
@@ -6,8 +6,8 @@ section.shape_gemstone__content {
 }
 
 
-section.shape_gemstone__content > article.card,
-section.shape_gemstone__content > article.card > ul > li {
+section.shape_of_gemstone__content > article.card,
+section.shape_of_gemstone__content > article.card > ul > li {
     font-size: 22px;
 }
 

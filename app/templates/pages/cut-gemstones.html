@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <section class="flex cut_gemstones__content ites-center">
+    <section class="flex cut-gemstones__content ites-center">
         {% with main_card|safe as content %}
             {% include "../components/card.html" with card_content=content %}
         {% endwith %}
@@ -14,7 +14,7 @@
         {% include "../components/card.html" with card_content=card %}
         {% endfor %}
     </section>
-    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/cut_gemstones.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/cut.css' %}" />
     <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
 {% endblock %}
 

@@ -1,4 +1,4 @@
-section.transparency_gemstone__content {
+section.transparency_of_gemstone__content {
     width: 100%;
     justify-content: sapce-between;
     aling-items: center;
@@ -6,8 +6,8 @@ section.transparency_gemstone__content {
 }
 
 
-section.transparency_gemstone__content > article.card,
-section.transparency_gemstone__content > article.card > ul > li {
+section.transparency_of_gemstone__content > article.card,
+section.transparency_of_gemstone__content > article.card > ul > li {
     font-size: 22px;
 }
 
