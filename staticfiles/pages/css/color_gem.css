@@ -1,9 +1,11 @@
-section.clarity_of_gems__content {
+section.color_gem__content {
     width: 100%;
+    justify-content: sapce-between;
+    aling-items: center;
     gap: 40px;
 }
 
-section.clarity_of_gems__content > figure {
+section.color_gem__content > figure {
     width: 191.42px;
     height: 411px;
 
@@ -11,17 +13,11 @@ section.clarity_of_gems__content > figure {
 }
 
 @media screen and (max-width: 768px) { 
-    section.clarity_of_gems__content {
+    section.color_gem__content {
         flex-wrap: wrap;
     }
 }
 
-.content-wrapper {
-    display: flex; /* Используем Flexbox */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
-    height: calc(100vh - 100px); /* Учитываем высоту заголовка и отступы снизу */
-}
 
 .image-container {
     margin-right: 20px; /* Отступ между изображением и текстом */

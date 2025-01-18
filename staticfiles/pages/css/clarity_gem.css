@@ -1,11 +1,9 @@
-section.color_of_gemstones__content {
+section.clarity_gem__content {
     width: 100%;
-    justify-content: sapce-between;
-    aling-items: center;
     gap: 40px;
 }
 
-section.color_of_gemstones__content > figure {
+section.clarity_gem__content > figure {
     width: 191.42px;
     height: 411px;
 
@@ -13,11 +11,17 @@ section.color_of_gemstones__content > figure {
 }
 
 @media screen and (max-width: 768px) { 
-    section.color_of_gemstones__content {
+    section.clarity_gem__content {
         flex-wrap: wrap;
     }
 }
 
+.content-wrapper {
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: calc(100vh - 100px); /* Учитываем высоту заголовка и отступы снизу */
+}
 
 .image-container {
     margin-right: 20px; /* Отступ между изображением и текстом */

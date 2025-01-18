@@ -3,7 +3,7 @@ section {
     gap: 40px;
 }
 
-section.cut-gemstones__content > figure {
+section.cut_gem__content > figure {
     max-width: 191.42px;
     max-height: 411px;
 
@@ -48,8 +48,8 @@ figure.small-diamond {
     height: 100%;
 }
 
-section.cut-gemstones__content > article.card,
-section.cut-gemstones__content > article.card > ul > li {
+section.cut_gem__content > article.card,
+section.cut_gem__content > article.card > ul > li {
     font-size: 22px;
 }
 
@@ -61,7 +61,7 @@ section.card-list {
 }
 
 @media screen and (max-width: 768px) { 
-    section.cut-gemstones__content {
+    section.cut_gem__content {
         flex-wrap: wrap;
         justify-content: center;
         margin: 0 auto;
