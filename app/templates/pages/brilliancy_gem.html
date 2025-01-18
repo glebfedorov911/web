@@ -4,7 +4,7 @@
 {% block google_tag %}{% endblock %}
 {% block content %}
 
-    <section class="flex brilliancy_of_gemstones__content">
+    <section class="flex brilliancy_gem__content">
         {% with card|safe as content %}
         {% include "../components/card.html" with card_content=content %}
         {% endwith %}
@@ -110,6 +110,6 @@
 <!--        <figure><img src="{% static '/pages/img/transparency/pp-1.png' %}" alt=""></figure>-->
 <!--        <figure><img src="{% static '/pages/img/transparency/np-1.png' %}" alt=""></figure>-->
 <!--    </section>-->
-    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/brilliancy_of_gemstones.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/pages/css/brilliancy_gem.css' %}" />
     <p><b><a href="{% url 'main' %}" style="color: #A80404">Back</a></b></p>
 {% endblock %}

@@ -1,9 +1,9 @@
-section.color__content {
+section.color_gem__content {
     width: 100%;
     gap: 40px;
 }
 
-section.color__content > figure {
+section.color_gem__content > figure {
     width: 191.42px;
     height: 411px;
 
@@ -11,7 +11,7 @@ section.color__content > figure {
 }
 
 @media screen and (max-width: 768px) { 
-    section.color__content {
+    section.color_gem__content {
         flex-wrap: wrap;
     }
 }

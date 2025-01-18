@@ -1,12 +1,12 @@
-section.brilliancy__content {
+section.transparency_gem__content {
     width: 100%;
 
     gap: 40px;
 }
 
 
-section.brilliancy__content > article.card,
-section.brilliancy__content > article.card > ul > li {
+section.transparency_gem__content > article.card,
+section.transparency_gem__content > article.card > ul > li {
     font-size: 22px;
 }
 

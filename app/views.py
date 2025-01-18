@@ -48,7 +48,7 @@ class FreeVygemView(View):
 class CutView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/cut-gemstones.html', {
+        return render(request, 'pages/cut_gem.html', {
             'title': 'Cut gemstomes',
             'page_title': 'Cut gemstones',
             'main_card': '''
@@ -91,7 +91,7 @@ class CutView(View):
 class TransparencyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/transparency_of_gemstone.html', {
+        return render(request, 'pages/transparency_gem.html', {
             'title': 'Transparency of gemstones',
             'page_title': 'TRANSPARENCY OF GEMSTONES',
             'card': '''
@@ -116,7 +116,7 @@ class TransparencyView(View):
 class ColorView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/color_of_gemstones.html', {
+        return render(request, 'pages/color_gem.html', {
             'title': 'Color gemstones',
             'page_title': 'COLOR GEMSTONES',
             'card': '''
@@ -187,7 +187,7 @@ class ColorView(View):
 class ClarityView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/clarity_of_gems.html', {
+        return render(request, 'pages/clarity_gem.html', {
             'title': 'Gemstone Clarity Analysis<',
             'page_title': 'CLARITY GEMSTONES',
             'card': '''
@@ -217,7 +217,7 @@ class ClarityView(View):
 class BrilliancyView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/brilliancy_of_gemstones.html', {
+        return render(request, 'pages/brilliancy_gem.html', {
             'title': 'BRILLIANCY OF GEMSTONES',
             'page_title': 'BRILLIANCY OF GEMSTONES',
             'card': '''
@@ -238,7 +238,7 @@ class BrilliancyView(View):
 class ShapeView(View):
     @staticmethod
     def get(request):
-        return render(request, 'pages/shape_of_gemstone.html', {
+        return render(request, 'pages/shape_gem.html', {
             'title': 'Shape of gemstone',
             'page_title': 'Shape of gemstone',
             'card': '''
@@ -486,7 +486,7 @@ class GemnameView(View):
             <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
             """
 
-        return render(request, 'pages/gemname.html', {
+        return render(request, 'pages/name_gem.html', {
             'title': 'GEM NAME',
             'page_title': 'GEM NAME',
             'card': card_content

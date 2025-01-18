@@ -1,11 +1,11 @@
-section.shape__content {
+section.shape_gem__content {
     width: 100%;
 
     gap: 40px;
 }
 
-section.shape__content > article.card,
-section.shape__content > article.card > ul > li {
+section.shape_gem__content > article.card,
+section.shape_gem__content > article.card > ul > li {
     font-size: 22px;
 }
 

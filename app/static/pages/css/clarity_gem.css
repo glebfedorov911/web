@@ -1,10 +1,10 @@
-section.clarity__content {
+section.clarity_gem__content {
     width: 100%;
 
     gap: 40px;
 }
 
-section.clarity__content > figure {
+section.clarity_gem__content > figure {
     width: 191.42px;
     height: 411px;
 
