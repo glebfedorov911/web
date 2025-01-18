@@ -101,6 +101,14 @@ article.splines-block > figure {
 
 /* Размещаем 10 точек */
 
+article.splines-block > a:hover {
+    color: red; /* Цвет ссылки при наведении */
+}
+article.splines-block > a {
+  color: darkred; /* Цвет ссылки */
+  text-decoration-color: darkred; /* Цвет подчеркивания */
+}
+
 article.splines-block > #first-point {
     grid-column: 1/2;
     grid-row: 1/2;
