@@ -428,7 +428,7 @@ class PayView(View):
         <li>Transaction details showing "LEMSQZY* VYGEM" (formerly) or "STRIPE*VYGEM" on your statement.</li>
     </ul>
 
-    <a href="https://vygem.lemonsqueezy.com"><img src="{% static 'static/pages/img/lemonsqueezy1.png' %}" alt="lemonsqueezy.com"></a>
+    <a href="https://vygem.lemonsqueezy.com"><img src="{% static 'app/static/pages/img/lemonsqueezy1.png' %}" alt="lemonsqueezy.com"></a>
 
     <p>For any payment-related inquiries, please contact Stripe support directly or reach out to us at <a href="mailto:payment@vygem.info">payment@vygem.info</a>.</p>
 
