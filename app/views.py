@@ -92,8 +92,8 @@ class TransparencyView(View):
     @staticmethod
     def get(request):
         return render(request, 'pages/transparency_gem.html', {
-            'title': 'Transparency of gemstones',
-            'page_title': 'TRANSPARENCY OF GEMSTONES',
+            'title': 'Transparency gemstones',
+            'page_title': 'TRANSPARENCY GEMSTONES',
             'card': '''
              <h2>Gemstone Transparency</h2>
 
@@ -218,8 +218,8 @@ class BrilliancyView(View):
     @staticmethod
     def get(request):
         return render(request, 'pages/brilliancy_gem.html', {
-            'title': 'BRILLIANCY OF GEMSTONES',
-            'page_title': 'BRILLIANCY OF GEMSTONES',
+            'title': 'BRILLIANCY GEMSTONES',
+            'page_title': 'BRILLIANCY GEMSTONES',
             'card': '''
                 <h2>Brilliancy gemstones</h2>
 
@@ -239,8 +239,8 @@ class ShapeView(View):
     @staticmethod
     def get(request):
         return render(request, 'pages/shape_gem.html', {
-            'title': 'Shape of gemstone',
-            'page_title': 'Shape of gemstone',
+            'title': 'Shape gemstone',
+            'page_title': 'Shape gemstone',
             'card': '''
                 <h2>Shape of gemstones</h2>
 
