@@ -1,6 +1,27 @@
 {% extends '../app/base.html' %}
 {% load static %}
 
+{% block google_tag_manager %}<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WHGC4VW4');</script>
+<!-- End Google Tag Manager -->{% endblock %}
+
+{% block keywords %}
+    gemstones, gemstone, gem, gems, stone, stones,  precious, ruby, emerald, sapphire, faceted, price per carat, price trends
+{% endblock %}
+
+{% block title %}
+    Vygem free
+{% endblock %}
+
+{% block description %}
+    Vygem offers both free and paid versions
+{% endblock %}
+
+
 {% block content %}
     <section class="flex flex-col free-vygem__content">
         {% include "../components/card.html" with card_content="The aim of our project is to make the pricing of gemstones understandable to all people who interact with them.<br>As we strive towards our goal, we have undoubtedly made mistakes and inaccuracies in creating the application. Understanding that only those who do nothing do not make mistakes, we will sincerely appreciate it if users of our application point out our voluntary or involuntary errors.<br>Our team is grateful to those who support our project." %}
