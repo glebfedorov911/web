@@ -543,9 +543,8 @@ class ResultView(View):
         return render(request, 'pages/result.html', {
             'title': 'Result',
             'page_title': 'Result',
-            'main_card': """<p>Upon receiving the stone valuation, suppress your emotions. This is crucial.</p>
-
-<h2>Understanding Your Gemstone Valuation</h2>
+            'main_card': '''
+            <h2>Understanding Your Gemstone Valuation</h2>
 
     <p>After receiving a gemstone valuation, it’s crucial to manage your expectations and approach the next steps with careful consideration. Remember that emotional responses can cloud judgment.</p>
 
@@ -571,6 +570,7 @@ class ResultView(View):
     <p>By taking these steps, you will be better prepared to navigate the gem valuation process with clarity and confidence.</p>
 
 
+            '''
         })
 
 
