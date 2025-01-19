@@ -483,8 +483,28 @@ class GemnameView(View):
     @staticmethod
     def get(request):
         card_content = """
-            <p>It is essential to correctly identify the precious gemstone. When identifying precious gemstones, the following physical parameters are determined: hardness, density, thermal conductivity, and optical characteristics (refractive index, dispersion, fluorescence, pleochroism, etc.). The chemical composition of a gemstone is very important. Only a certified gemologist (gemological laboratory) with a good reputation can provide the final verdict in determining the name of the precious gemstone.</p>
-            """
+            
+                <h2>Selecting the Correct Gemstone for Evaluation</h2>
+
+    <p>Choosing the appropriate gemstone from our list is crucial for obtaining an accurate valuation. Proper identification is paramount, as even subtle differences can significantly impact a gem's worth. Here’s a guide to help you make an informed choice:</p>
+
+    <h3>Key Considerations for Gemstone Identification:</h3>
+
+    <ol>
+        <li><strong>Accurate Identification is Essential:</strong> The first step is to ensure you’ve correctly identified your gem. Misidentification can lead to inaccurate pricing and assessments.</li>
+        <li><strong>Physical and Optical Properties:</strong> Consider the gem's observable physical and optical characteristics, including its color, luster, transparency, refractive index, and specific gravity. These properties are fundamental to differentiating between various gemstones.</li>
+        <li><strong>Provenance and History (If Known):</strong> If possible, gathering information about a gemstone's origin and history can sometimes provide valuable insights, though this is often challenging.</li>
+        <li><strong>Treatment Detection:</strong> It is vital to assess whether the gem has undergone any treatments or enhancements. These can dramatically affect its value.</li>
+         <li><strong>Certification from Reputable Labs:</strong> Only certificates issued by recognized and reputable gemmological laboratories provide reliable verification of a gem's identity, properties, and any treatments.</li>
+          <li><strong>Caution with On-Site Certificates:</strong> Be aware that gemmological certificates issued at mass-market locations or tourist spots (e.g., some areas in Sri Lanka) should be approached with caution. They often do not guarantee the accuracy of the information provided.</li>
+        <li><strong>Understanding Certificate Language:</strong> Familiarize yourself with the meaning of each sign, symbol, or term found on a gemmological certificate or jewelry tag. This ensures you fully understand what you are buying or evaluating.</li>
+         <li><strong>Deciphering Treatment Codes:</strong> Common codes on certificates often indicate treatments. For instance, “H” typically denotes a heated stone, which is a common enhancement for many gemstones. Other common indications include "B" for bleaching, “C” for coating, “O” for oiling, “R” for irradiation and “F” for filling/fracture-filling.</li>
+       <li><strong>Common Enhancement Methods:</strong> Be aware of the common gemstone enhancement methods, which include heat treatment (H), irradiation (R), oiling (O), dyeing, fracture filling (F) and coating (C). Each type of treatment can have a different impact on the price per carat of the gemstone.</li>
+    </ol>
+    <p>By carefully considering these factors, you'll be better equipped to accurately select the correct gemstone from the list in our app and obtain a more precise valuation. Remember to always consult with a qualified gemmologist for any complex or unclear situations.</p>
+
+            
+               """
 
         return render(request, 'pages/name_gem.html', {
             'title': 'GEM NAME',
