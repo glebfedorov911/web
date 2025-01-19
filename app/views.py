@@ -545,15 +545,31 @@ class ResultView(View):
             'page_title': 'Result',
             'main_card': """<p>Upon receiving the stone valuation, suppress your emotions. This is crucial.</p>
 
-<ol>
-    <li>Ensure the authenticity of your stone.<br>
-        To do this, consult a professional gemologist. You can do this either independently or by using our application's service.</li>
-    <li>Confirm that you have correctly specified the stone parameters.<br>
-        Review the valuation results by inputting parameters adjacent to those you initially provided. For instance, the clarity might be assessed differently by another expert as SI2 instead of SI1, resulting in a different price. This prepares you for hearing significantly different prices for your stone.</li>
-    <li>When you are prepared for objections from the counterparty and are ready to entertain a different price, have responses ready for all arising questions. Always remember that the counterparty's arguments must undergo scrutiny. Trust should not be granted without evidence.</li>
-</ol>
+<h2>Understanding Your Gemstone Valuation</h2>
 
-<p>Respect the price proposed by the counterparty. It may indeed be below the market value. However, a buyer for this stone may not be available at the moment, requiring the investor to hold onto the stone in hopes of selling it in the future. They have the right to insurance against risks associated with their investment.</p> """
+    <p>After receiving a gemstone valuation, it’s crucial to manage your expectations and approach the next steps with careful consideration. Remember that emotional responses can cloud judgment.</p>
+
+    <h3>Verifying Gemstone Authenticity</h3>
+    <p>It's essential to confirm the authenticity of your gemstone. To do this:</p>
+        <ul>
+            <li>Consult a professional gemmologist. You can seek an independent assessment or utilize our app's gemmologist finder service.</li>
+        </ul>
+
+    <h3>Confirming Parameter Accuracy</h3>
+    <p>Re-verify that you have accurately entered your gemstone's parameters:</p>
+        <ul>
+            <li>Compare the parameters you initially entered with those presented in the valuation report. Slight variations in grading are common, and can significantly affect the price. For example, clarity may be assessed by a different gemmologist as SI2 instead of SI1, resulting in a different valuation. Be prepared for potentially divergent price estimates.</li>
+        </ul>
+
+     <h3>Negotiating and Evaluating Offers</h3>
+        <p>When engaging with potential buyers or sellers, be prepared for counter-offers and be ready to discuss and explain your valuation. Keep in mind:</p>
+            <ul>
+                <li>Always scrutinize the arguments of the other party. Do not accept assertions without clear and verifiable evidence.</li>
+                <li>Respect the price offered by a potential buyer, even if it’s below what you believe to be the market value. The current market and liquidity can greatly influence a gem's immediate selling price. Buyers or investors often factor in risks associated with holding a gemstone, such as market fluctuations or extended holding periods while waiting for a buyer. These factors will affect their offer.</li>
+           </ul>
+
+    <p>By taking these steps, you will be better prepared to navigate the gem valuation process with clarity and confidence.</p>
+
 
         })
 
